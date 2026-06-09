@@ -18,7 +18,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
+using System.Text.Json;
 using System.Windows.Forms;
 
 using DPayments.InEBank;
@@ -37,7 +39,52 @@ namespace DPayments.Demos
     public accountinfoDemo()
     {
       InitializeComponent();
+      LoadLocalSettings();
     }
+
+    private void LoadLocalSettings()
+    {
+      try
+      {
+        string? settingsPath = FindLocalSettingsPath();
+        if (settingsPath == null)
+          return;
+
+        string json = File.ReadAllText(settingsPath);
+        var options = new JsonSerializerOptions
+        {
+          PropertyNameCaseInsensitive = true
+        };
+
+        var localSettings = JsonSerializer.Deserialize<LocalSettings>(json, options);
+        if (localSettings?.DPayments?.Ofx == null)
+          return;
+
+        txtUrl.Text = localSettings.DPayments.Ofx.FiUrl ?? txtUrl.Text;
+        txtFIOrganization.Text = localSettings.DPayments.Ofx.FiOrganization ?? txtFIOrganization.Text;
+        txtFIId.Text = localSettings.DPayments.Ofx.FiId ?? txtFIId.Text;
+        txtUserId.Text = localSettings.DPayments.Ofx.OfxUser ?? txtUserId.Text;
+        txtPassword.Text = localSettings.DPayments.Ofx.OfxPassword ?? txtPassword.Text;
+      }
+      catch
+      {
+        // Ignore local settings errors and allow the demo to run with manual entry.
+      }
+    }
+
+    private static string? FindLocalSettingsPath()
+    {
+      var directory = new DirectoryInfo(AppContext.BaseDirectory);
+      while (directory != null)
+      {
+        string candidate = Path.Combine(directory.FullName, "local.settings.json");
+        if (File.Exists(candidate))
+          return candidate;
+        directory = directory.Parent;
+      }
+      return null;
+    }
+
     private void btnGetAccountInfo_Click(object sender, EventArgs e)
     {
       try
