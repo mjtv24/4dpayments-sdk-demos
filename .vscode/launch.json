@@ -1,0 +1,90 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Account Info Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/Account Info (WinForms)/bin/Debug/net6.0-windows/accountinfo.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/Account Info (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Bank Statement Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/Bank Statement (WinForms)/bin/Debug/net6.0-windows/bankstatement.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/Bank Statement (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Bank Transfer Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/Bank Transfer (WinForms)/bin/Debug/net6.0-windows/banktransfer.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/Bank Transfer (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Bill Payment Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/Bill Payment (WinForms)/bin/Debug/net6.0-windows/billpayment.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/Bill Payment (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug CCStatement Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/CCStatement Demo (WinForms)/bin/Debug/net6.0-windows/ccstatement.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/CCStatement Demo (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug FIProfile Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/FIProfile Demo (WinForms)/bin/Debug/net6.0-windows/fiprofile.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/FIProfile Demo (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug InvStatement Demo",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build All Demos",
+      "program": "${workspaceFolder}/InvStatement Demo (WinForms)/bin/Debug/net6.0-windows/invstatement.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/InvStatement Demo (WinForms)",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch Account Info Demo After Building All Demos",
+      "configurations": [
+        "Debug Account Info Demo"
+      ]
+    }
+  ]
+}

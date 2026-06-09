@@ -1,0 +1,134 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build All Demos",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Account Info (WinForms)/accountinfo.csproj",
+        "Bank Statement (WinForms)/bankstatement.csproj",
+        "Bank Transfer (WinForms)/banktransfer.csproj",
+        "Bill Payment (WinForms)/billpayment.csproj",
+        "CCStatement Demo (WinForms)/ccstatement.csproj",
+        "FIProfile Demo (WinForms)/fiprofile.csproj",
+        "InvStatement Demo (WinForms)/invstatement.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build Account Info Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Account Info (WinForms)/accountinfo.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build Bank Statement Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Bank Statement (WinForms)/bankstatement.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build Bank Transfer Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Bank Transfer (WinForms)/banktransfer.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build Bill Payment Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Bill Payment (WinForms)/billpayment.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build CCStatement Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "CCStatement Demo (WinForms)/ccstatement.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build FIProfile Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "FIProfile Demo (WinForms)/fiprofile.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build InvStatement Demo",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "InvStatement Demo (WinForms)/invstatement.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}

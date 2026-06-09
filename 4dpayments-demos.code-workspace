@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "Account Info (WinForms)"
+    },
+    {
+      "path": "Bank Statement (WinForms)"
+    },
+    {
+      "path": "Bank Transfer (WinForms)"
+    },
+    {
+      "path": "Bill Payment (WinForms)"
+    },
+    {
+      "path": "CCStatement Demo (WinForms)"
+    },
+    {
+      "path": "FIProfile Demo (WinForms)"
+    },
+    {
+      "path": "InvStatement Demo (WinForms)"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/bin": true,
+      "**/obj": true,
+      "**/.vs": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-dotnettools.csharp"
+    ]
+  }
+}
