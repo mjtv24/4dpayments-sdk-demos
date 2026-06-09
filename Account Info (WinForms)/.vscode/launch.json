@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Launch (WinForms)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build accountinfo",
+      "program": "${workspaceFolder}/bin/Debug/net6.0-windows/accountinfo.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  ]
+}

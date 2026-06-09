@@ -9,9 +9,16 @@ obj/
 *.sln.docstates
 
 # VS Code
-.vscode/**
+**/.vscode/
+.vscode/
+!.vscode/
 !.vscode/tasks.json
 !.vscode/launch.json
+
+# Visual Studio temporary and user files
+.vs/
+**/.vs/
+**/.vs/**
 
 # OS generated files
 .DS_Store

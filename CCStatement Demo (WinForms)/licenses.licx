@@ -1,0 +1,22 @@
+DPayments.InEBank.Account, DPayments.InEBank
+
+DPayments.InEBank.BankStatement, DPayments.InEBank
+
+DPayments.InEBank.BankTransfer, DPayments.InEBank
+
+DPayments.InEBank.BillPayment, DPayments.InEBank
+
+DPayments.InEBank.CCStatement, DPayments.InEBank
+
+DPayments.InEBank.CertMgr, DPayments.InEBank
+
+DPayments.InEBank.FIProfile, DPayments.InEBank
+
+DPayments.InEBank.InvStatement, DPayments.InEBank
+
+DPayments.InEBank.LoanStatement, DPayments.InEBank
+
+DPayments.InEBank.OFXAggregate, DPayments.InEBank
+
+DPayments.InEBank.OFXBatch, DPayments.InEBank
+

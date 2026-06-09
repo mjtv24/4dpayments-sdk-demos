@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>DPayments.Demos</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateLicx>false</GenerateLicx>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DPayments.InEBank">
+      <HintPath>..\..\lib\net6.0\DPayments.InEBank.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="DPayments.InEBank.System">
+      <HintPath>..\..\lib\net6.0\DPayments.InEBank.System.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
