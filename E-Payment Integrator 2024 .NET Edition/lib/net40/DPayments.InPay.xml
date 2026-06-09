@@ -1,0 +1,2430 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DPayments.InPay</name>
+    </assembly>
+    <members>
+        <member name="T:DPayments.InPay.ACHConverterErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.ACHConverter.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileBatchCount">
+            <summary>Total number of batches contained in the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileBlockCount">
+            <summary>Total number of blocks in a file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileCreditTotal">
+            <summary>Total amount credited to the merchant's bank account.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileDebitTotal">
+            <summary>Total amount debited from the merchant's bank account.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileEntryCount">
+            <summary>Total number of entries in a file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.FileEntryHash">
+            <summary>Hash of the routing numbers from each detail record in the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.InputFile">
+            <summary>Specifies the file to read data from when calling ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.InputString">
+            <summary>Data in memory to read from when calling ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.OutputFile">
+            <summary>Specifies the file data is written to when calling ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.OutputString">
+            <summary>Contains the results from ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.Schema">
+            <summary>Returns the XSD Schema used to create XML from ACH files.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ACHConverter.VerifyMode">
+            <summary>Determines how the totals in the Batch and File control records are validated.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.ConvertACH">
+            <summary>Converts a file from ACH format into XML.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.ConvertXML">
+            <summary>Converts an XML file into ACH format.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.SetInputStream(System.IO.Stream)">
+            <summary>The input stream to read from when calling ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="M:DPayments.InPay.ACHConverter.SetOutputStream(System.IO.Stream)">
+            <summary>The output stream to write to when calling ConvertXML or ConvertACH .</summary>
+        </member>
+        <member name="T:DPayments.InPay.CardValidatorErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.CardValidator.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.CardExpMonth">
+            <summary>Expiration month of the credit card specified in CardNumber .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.CardExpYear">
+            <summary>Expiration year of the credit card specified in CardNumber .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.CardNumber">
+            <summary>Credit card number to be validated.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.CardType">
+            <summary>Indicates the results of the Luhn Digit Check algorithm.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.CardTypeDescription">
+            <summary>Human-readable description of the CardType .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.DateCheckPassed">
+            <summary>Indicates whether the card is expired or not.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.DigitCheckPassed">
+            <summary>Indicates the results of the Luhn Digit Check algorithm.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.TrackData">
+            <summary>Magnetic stripe data read off the credit card.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CardValidator.TrackType">
+            <summary>Indicates the type of the specified TrackData .</summary>
+        </member>
+        <member name="M:DPayments.InPay.CardValidator.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CardValidator.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CardValidator.ValidateCard">
+            <summary>Checks the card number and expiration date for validity.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrCertChainEventArgs">
+            <summary>Event arguments for the CertChain event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrCertListEventArgs">
+            <summary>Event arguments for the CertList event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrKeyListEventArgs">
+            <summary>Event arguments for the KeyList event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrLogEventArgs">
+            <summary>Event arguments for the Log event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.CertMgrStoreListEventArgs">
+            <summary>Event arguments for the StoreList event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnCertChain">
+            <summary>This event shows the certificate chain for the certificate (see the ShowCertificateChain method).</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnCertList">
+            <summary>This event lists the certificates in a store (see the ListStoreCertificates method).</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnError">
+            <summary>Fired when information is available about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnKeyList">
+            <summary>This lists the keysets in a Cryptographic Service Provider (CSP); see the ListKeys method.</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnLog">
+            <summary>This event fires once for each log message.</summary>
+        </member>
+        <member name="E:DPayments.InPay.CertMgr.OnStoreList">
+            <summary>This lists the system certificate stores (see the ListCertificateStores and ListMachineStores methods).</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.Cert">
+            <summary>This is the currently selected certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.CertExtensions">
+            <summary>This is a list of extensions used by the currently selected certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.CertStoreB">
+            <summary>This is the certificate store to search for certificates.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.CertStore">
+            <summary>This is the certificate store to search for certificates.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.SetCertStore(System.Byte[],System.Int32,System.Int32)">
+            <summary>This is the certificate store to search for certificates.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.CertStorePassword">
+            <summary>This is the password for the certificate store (if any).</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.CertStoreType">
+            <summary>This is the type of certificate store for CertStore .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.ExportedCertB">
+            <summary>This is the exported certificate string.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.ExportedCert">
+            <summary>This is the exported certificate string.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.ExportFormat">
+            <summary>This is the format to which the certificate is exported.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertMgr.ExportPrivateKey">
+            <summary>This controls whether to export the private key.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.CheckCRL">
+            <summary>This method checks the Certificate Revocation List (CRL) specified by the currently loaded certificate.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.CheckOCSP">
+            <summary>This method uses Online Certificate Status Protocol (OCSP) to check the status of the currently loaded certificate.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.CreateCertificate(System.String,System.Int32)">
+            <summary>This method creates a new self-signed certificate in the current store.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.CreateKey(System.String)">
+            <summary>This method creates a new keyset associated with the provided name.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.DeleteCertificate">
+            <summary>This method deletes the currently selected certificate from the store.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.DeleteKey(System.String)">
+            <summary>This method deletes the keyset associated with the provided name.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ExportCertificate(System.String,System.String)">
+            <summary>This method exports the currently selected certificate.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.GenerateCSR(System.String,System.String)">
+            <summary>This method generates a new Certificate Signing Request (CSR) to be sent to a signing authority.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ImportCertificate(System.String,System.String,System.String)">
+            <summary>This method imports a certificate from a file into the current certificate store.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ImportSignedCSR(System.Byte[],System.String)">
+            <summary>This method imports a signed Certificate Signing Request (CSR).</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.IssueCertificate(System.String,System.Int32)">
+            <summary>This creates a new certificate in the current store and is signed by the selected certificate.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ListCertificateStores">
+            <summary>This lists the certificate stores.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ListKeys">
+            <summary>This lists the keysets in a Cryptographic Service Provider (CSP).</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ListMachineStores">
+            <summary>This lists the machine certificate stores.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ListStoreCertificates">
+            <summary>This lists the certificates in a store.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ReadCertificate(System.String)">
+            <summary>This loads a certificate from a file.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ReadCSR(System.String)">
+            <summary>This reads a Certificate Signing Request (CSR).</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.Reset">
+            <summary>This resets all certificate properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.SaveCertificate(System.String)">
+            <summary>This method saves the currently selected public certificate to a file.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.ShowCertificateChain">
+            <summary>This shows the certificate chain.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertMgr.SignCSR(System.Byte[],System.Int32)">
+            <summary>This creates a signed certificate from a Certificate Signing Request (CSR).</summary>
+        </member>
+        <member name="T:DPayments.InPay.Check21ErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.Check21SSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.Check21SSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.Check21StatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.Check21.OnError">
+            <summary>Information about non-fatal errors encountered during file construction.</summary>
+        </member>
+        <member name="E:DPayments.InPay.Check21.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.Check21.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="E:DPayments.InPay.Check21.OnStatus">
+            <summary>Traces the commands sent to the server, and the respective replies.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.BusinessDate">
+            <summary>The year, month, and day that designates the business date at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.CashLetterId">
+            <summary>A code used to uniquely identify the cash letter inside the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.Checks">
+            <summary>Collection of checks to be written to the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.CollectionType">
+            <summary>A code that indicates the type of cash letter and bundle contained in the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.CycleNumber">
+            <summary>Denotes the cycle under which the file is created.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.DestinationName">
+            <summary>The short name that identifies the institution that receives the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.DestinationRoutingNumber">
+            <summary>This number identifies the institution that receives the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.DocumentationType">
+            <summary>A code that indicates the type of documentation that supports all Checks records in the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.FileDataB">
+            <summary>Contains the binary contents of the X9.37 file created by the BuildFile method.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.FileData">
+            <summary>Contains the binary contents of the X9.37 file created by the BuildFile method.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.FileName">
+            <summary>Path and name of the file to be written to disk by the BuildFile method.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.FTP">
+            <summary>Information about the FTP or FTPS server you're uploading to.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.Origin">
+            <summary>Contains information about the originator of this file and the checks contained within.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.RecordType">
+            <summary>A code that indicates the type of records contained in this file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.ReturnRoutingNumber">
+            <summary>A routing number indicating the location to which returns and return notifications should be sent.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SettlementDate">
+            <summary>The date that the institution that created the file expects settlement.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Check21.SSLStartMode">
+            <summary>This property determines how the component starts the Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.BuildAndUploadFile">
+            <summary>Builds an X9.37 file and uploads it to an FTP server.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.BuildFile">
+            <summary>Builds an X9.37 file.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.Interrupt">
+            <summary>This method interrupts the current method.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Check21.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="T:DPayments.InPay.DirectPaymentErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.DirectPaymentSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.DirectPaymentSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.DirectPayment.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.DirectPayment.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.DirectPayment.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Ack">
+            <summary>Acknowledgement code received from PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Authorization">
+            <summary>This property includes the Authorization string to be sent to the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Card">
+            <summary>Card contains credit card information for the payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.InvoiceNumber">
+            <summary>Your own invoice or tracking number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Items">
+            <summary>This collection contains the items being purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.ItemTotal">
+            <summary>Sum of all the Amount s.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.MerchantSessionId">
+            <summary>Your customer session identification token.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Note">
+            <summary>An informational note about this settlement that will be displayed in the  payer's transaction history.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.OrderDescription">
+            <summary>Description of items the customer is purchasing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.OrderTotal">
+            <summary>Total amount of the order.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Password">
+            <summary>Password for communicating with PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Payer">
+            <summary>This is the person being billed for the current purchase.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Payment">
+            <summary>This contains details about the payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Response">
+            <summary>The response from the transaction is described here.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.ShippingTotal">
+            <summary>Total shipping costs for this order.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Signature">
+            <summary>Value to use with PayPal's Signature Authentication scheme.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.TaxTotal">
+            <summary>Sum of tax for all items included in this order.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.URL">
+            <summary>URL all PayPal payment transactions are posted to.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPayment.User">
+            <summary>User name for communicating with Paypal.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.AddCustomField(System.String,System.String)">
+            <summary>This adds a custom name-value pair to be sent with the next request.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Authorize">
+            <summary>This method sends an Authorization transaction to PayPal.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Capture(System.String,System.String)">
+            <summary>Completely or partially settles a previously authorized transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.GetResponseVar(System.String)">
+            <summary>It is not uncommon for there to be additional response variables returned in the response that cannot be directly obtained via the Response properties.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Interrupt">
+            <summary>This method interrupts the current method.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.Sale">
+            <summary>This method sends a Sale transaction to PayPal.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPayment.VoidTransaction(System.String)">
+            <summary>Voids a prior authorization.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ECheckErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ECheckSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ECheckSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.ECheck.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ECheck.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ECheck.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Bank">
+            <summary>Bank account and routing information for an electronic check transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.CheckNumber">
+            <summary>Indicates the check number to use for a transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.CompanyName">
+            <summary>The Company Name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.GatewayURL">
+            <summary>Default URL for a specific Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.LicenseDOB">
+            <summary>Customer's Date of Birth as indicated on his driver's license.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.LicenseNumber">
+            <summary>Customer's drivers license number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.LicenseState">
+            <summary>State in which customer's drivers license was issued.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.PaymentType">
+            <summary>The type of check payment request (commonly referred to as SEC Code).</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Response">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.TaxId">
+            <summary>Company's Tax Id or a Customer's Social Security Number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.TransactionAmount">
+            <summary>Purchase amount for an authorization or retry transaction. Not used for reversals.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.TransactionDesc">
+            <summary>Description of goods purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ECheck.TransactionId">
+            <summary>Merchant-generated transaction Id used for all transactions.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.Authorize">
+            <summary>Initiates a check authorization transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.Credit(System.String,System.String)">
+            <summary>Credits a previous ACH transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ECheck.VoidTransaction(System.String)">
+            <summary>Voids a previously authorized transaction.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ExpressCheckoutErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ExpressCheckoutSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.ExpressCheckoutSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.ExpressCheckout.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ExpressCheckout.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ExpressCheckout.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Ack">
+            <summary>Acknowledgement code received from PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Authorization">
+            <summary>This property includes the Authorization string to be sent to the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.BuyerEmail">
+            <summary>Buyer's email address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.CancelURL">
+            <summary>URL to which the customer is returned if he decides not to pay with PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.ContactPhone">
+            <summary>Payer's contact telephone number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.InvoiceNumber">
+            <summary>Your own unique invoice or tracking number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Items">
+            <summary>This is the collection of items being purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Note">
+            <summary>An informational note about this settlement that will be displayed in the  payer's transaction history.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.OrderDescription">
+            <summary>Description of items the customer is purchasing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.OrderTotal">
+            <summary>The total cost of the order to the customer.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Password">
+            <summary>Password for communicating with PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Payer">
+            <summary>The person being billed for the current purchase.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.PayerId">
+            <summary>Unique encrypted PayPal customer account number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Payment">
+            <summary>This contains details about the express checkout payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.PaymentAction">
+            <summary>How you want to obtain payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.ResponseToken">
+            <summary>The time-stamped token value.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.ReturnURL">
+            <summary>URL to which the customer's browser is returned after choosing to pay with PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.ShippingTotal">
+            <summary>Total shipping costs for this order.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Signature">
+            <summary>Value to use with PayPal's Signature Authentication scheme.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.TaxTotal">
+            <summary>Sum of tax for all items included in this order.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.Token">
+            <summary>This property is used to reference a specific Express Checkout transaction in the PayPal network.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.URL">
+            <summary>URL all PayPal payment transactions are posted to.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckout.User">
+            <summary>User name for communicating with Paypal.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.AddCustomField(System.String,System.String)">
+            <summary>This adds a custom name-value pair to be sent with the next request.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.Capture(System.String,System.String)">
+            <summary>Completely or partially settles a previously authorized transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.CheckoutPayment">
+            <summary>Either obtain payment for a final sale, or request authorization for later capture of payment.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.GetCheckoutDetails">
+            <summary>Returns information about the customer, including name and address on file with PayPal.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.GetResponseVar(System.String)">
+            <summary>It is not uncommon for there to be additional response variables returned in the response that cannot be directly obtained via the Response properties.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.Interrupt">
+            <summary>This method interrupts the current method.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.SetCheckout">
+            <summary>Call this method to begin the Express Checkout process and fetch a token from PayPal which will encode transaction details.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckout.VoidTransaction(System.String)">
+            <summary>Voids a prior authorization.</summary>
+        </member>
+        <member name="T:DPayments.InPay.IChargeErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.IChargeSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.IChargeSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.ICharge.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ICharge.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.ICharge.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.AuthCode">
+            <summary>Authorization code from a previous transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Card">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.GatewayURL">
+            <summary>Default URL for a specific Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Level2Aggregate">
+            <summary>The level 2 aggregate containing the data to be sent in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Level3Aggregate">
+            <summary>The level 3 aggregate containing the data to be sent in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Response">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.ShippingInfo">
+            <summary>Contains the customer's shipping name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.TransactionAmount">
+            <summary>Purchase amount for an authorization transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.TransactionDesc">
+            <summary>Description of goods purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ICharge.TransactionId">
+            <summary>Merchant-generated transaction Id used for all transactions.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.AuthOnly">
+            <summary>Initiates an authorization-only request transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.AVSOnly">
+            <summary>Used to check the validity of the card without authorizing funds.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Capture(System.String,System.String)">
+            <summary>Captures a previously authorized transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Credit">
+            <summary>Credits a customer's card.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Force(System.String)">
+            <summary>Used when authorization cannot be obtained online.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Refund(System.String,System.String)">
+            <summary>Refunds a previously captured transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.Sale">
+            <summary>Initiates an Sale transaction (authorization and capture).</summary>
+        </member>
+        <member name="M:DPayments.InPay.ICharge.VoidTransaction(System.String)">
+            <summary>Voids a previously authorized transaction.</summary>
+        </member>
+        <member name="T:DPayments.InPay.Level2ErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.Level2.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.DutyAmount">
+            <summary>Duty fees (if any) for imported goods.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.FreightAmount">
+            <summary>Shipping charges associated with this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.PONumber">
+            <summary>Purchase order number assigned by the merchant.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.ShipFromZip">
+            <summary>Zip code the goods are being shipped from.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.ShipToZip">
+            <summary>Zip code the goods are being shipped TO.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.TaxAmount">
+            <summary>Sales tax charged in addition to the original TransactionAmount.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level2.TaxExempt">
+            <summary>Specifies the tax exempt status of the transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level2.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level2.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level2.GetAggregate">
+            <summary>Returns an aggregate containing level 2 details for a transaction.</summary>
+        </member>
+        <member name="T:DPayments.InPay.Level3ErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level3.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.Level3.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level3.LineItems">
+            <summary>A collection of line items to be included in the Level 3 addendum.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Level3.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level3.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level3.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Level3.GetAggregate">
+            <summary>Returns an aggregate containing level 3 details for a transaction.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthConnectedEventArgs">
+            <summary>Event arguments for the Connected event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthDisconnectedEventArgs">
+            <summary>Event arguments for the Disconnected event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthHeaderEventArgs">
+            <summary>Event arguments for the Header event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthLaunchBrowserEventArgs">
+            <summary>Event arguments for the LaunchBrowser event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthLogEventArgs">
+            <summary>Event arguments for the Log event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthRedirectEventArgs">
+            <summary>Event arguments for the Redirect event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthReturnURLEventArgs">
+            <summary>Event arguments for the ReturnURL event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthSetCookieEventArgs">
+            <summary>Event arguments for the SetCookie event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.OAuthTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnConnected">
+            <summary>Fired immediately after a connection completes (or fails).</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnConnectionStatus">
+            <summary>Fired to indicate changes in the connection state.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnDisconnected">
+            <summary>Fired when a connection is closed.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnEndTransfer">
+            <summary>Fired when a document finishes transferring.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnError">
+            <summary>Fired when information is available about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnHeader">
+            <summary>Fired every time a header line comes in.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnLaunchBrowser">
+            <summary>Fires before launching a browser with the authorization URL.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnLog">
+            <summary>Fired once for each log message.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnRedirect">
+            <summary>Fired when a redirection is received from the server.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnReturnURL">
+            <summary>Fired when the user is redirected to the embedded web server.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnSetCookie">
+            <summary>Fired for every cookie set by the server.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnStartTransfer">
+            <summary>Fired when a document starts transferring (after the headers).</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnStatus">
+            <summary>Fired when the HTTP status line is received from the server.</summary>
+        </member>
+        <member name="E:DPayments.InPay.OAuth.OnTransfer">
+            <summary>Fired while a document transfers (delivers document).</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.AccessToken">
+            <summary>The access token returned by the authorization server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.AccessTokenExp">
+            <summary>The lifetime of the access token.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.AuthorizationCode">
+            <summary>The authorization code that is exchanged for an access token.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.AuthorizationScope">
+            <summary>The scope request or response parameter used during authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ClientId">
+            <summary>The Id of the client assigned when registering the application.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ClientProfile">
+            <summary>The type of client that is requesting authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ClientSecret">
+            <summary>The secret value for the client assigned when registering the application.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Connected">
+            <summary>Whether the component is connected.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Cookies">
+            <summary>A collection of cookies.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.FollowRedirects">
+            <summary>Determines what happens when the server issues a redirect.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.GrantType">
+            <summary>The OAuth grant type used to acquire an OAuth access token.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.OtherHeaders">
+            <summary>Other headers as determined by the user (optional).</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Params">
+            <summary>The parameters to be included in the request to the authorization server or received in the response.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.RefreshToken">
+            <summary>The refresh token received from or sent to the authorization server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ReturnURL">
+            <summary>The URL where the user (browser) returns after authenticating.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ServerAuthURL">
+            <summary>The URL of the authorization server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.ServerTokenURL">
+            <summary>The URL used to obtain the access token.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.Timeout">
+            <summary>The timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.TransferredDataB">
+            <summary>The contents of the last response from the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.TransferredData">
+            <summary>The contents of the last response from the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.TransferredHeaders">
+            <summary>The full set of headers as received from the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.UsePKCE">
+            <summary>Whether Proof Key for Code Exchange (PKCE) should be used.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.WebServerPort">
+            <summary>The local port on which the embedded web server listens.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.WebServerSSLCert">
+            <summary>The certificate with the private key to use when a Secure Sockets Layer (SSL) is enabled.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuth.WebServerSSLEnabled">
+            <summary>Whether the web server requires Secure Sockets Layer (SSL) connections.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.AddCookie(System.String,System.String)">
+            <summary>Adds a cookie and the corresponding value to the outgoing request headers.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.AddParam(System.String,System.String)">
+            <summary>Adds a name-value pair to the query string parameters of the outgoing request.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.GetAuthorization">
+            <summary>Gets the authorization string required to access the protected resource.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.GetAuthorizationURL">
+            <summary>Builds and returns the URL to which the user should be redirected for authorization.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.GetParam(System.String)">
+            <summary>Gets a specific parameter from a query string.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.Interrupt">
+            <summary>This method interrupts the current method.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.Reset">
+            <summary>This method will reset the component.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.StartWebServer">
+            <summary>Starts the embedded web server.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuth.StopWebServer">
+            <summary>Stops the embedded web server.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RecurringBillingErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RecurringBillingSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RecurringBillingSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.RecurringBilling.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.RecurringBilling.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.RecurringBilling.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Card">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.ECheckBank">
+            <summary>Bank account and routing information for an electronic check transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.ECheckPaymentType">
+            <summary>The type of check payment request (commonly referred to as SEC Code).</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.GatewayURL">
+            <summary>Default URL for a specific Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.PaymentSchedule">
+            <summary>This property is used to specify the payment schedule for a recurring billing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Response">
+            <summary>Contains the response to the recurring transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.ShippingInfo">
+            <summary>Contains the customer's shipping name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SubscriptionDesc">
+            <summary>Description of recurring subscription.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SubscriptionDetails">
+            <summary>Contains the recurring subscription details.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.SubscriptionName">
+            <summary>The name of the recurring subscription or profile.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.RecurringBilling.TransactionId">
+            <summary>Merchant-generated transaction Id used for all transactions.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.CancelSubscription(System.String)">
+            <summary>Cancels or deletes a recurring payment subscription.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.CreateSubscription">
+            <summary>Creates a new recurring subscription.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.GetSubscriptionStatus(System.String)">
+            <summary>Retrieves the status of a recurring payment subscription.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="M:DPayments.InPay.RecurringBilling.UpdateSubscription(System.String)">
+            <summary>Updates a recurring payment subscription.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RetailErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RetailSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:DPayments.InPay.RetailSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:DPayments.InPay.Retail.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:DPayments.InPay.Retail.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:DPayments.InPay.Retail.OnSSLStatus">
+            <summary>Fired when secure connection progress messages are available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.AuthCode">
+            <summary>Authorization code from a previous transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Card">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.GatewayURL">
+            <summary>Default URL for a specific Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Level2Aggregate">
+            <summary>The level 2 aggregate containing the data to be sent in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Level3Aggregate">
+            <summary>The level 3 aggregate containing the data to be sent in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Response">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.ShippingInfo">
+            <summary>Contains the customer's shipping name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.SSLCert">
+            <summary>The certificate to be used during Secure Sockets Layer (SSL) negotiation.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.SSLProvider">
+            <summary>The Secure Sockets Layer/Transport Layer Security (SSL/TLS) implementation to use.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway .</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.TransactionAmount">
+            <summary>Purchase amount for an authorization transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.TransactionDesc">
+            <summary>Description of goods purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Retail.TransactionId">
+            <summary>Merchant-generated transaction Id used for all transactions.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.AuthOnly">
+            <summary>Initiates an authorization-only request transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.AVSOnly">
+            <summary>Used to check the validity of the card without authorizing funds.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Capture(System.String,System.String)">
+            <summary>Captures a previously authorized transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Credit">
+            <summary>Credits a customer's card.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.DoEvents">
+            <summary>This method processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Force(System.String)">
+            <summary>Used when authorization cannot be obtained online.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Refund(System.String,System.String)">
+            <summary>Refunds a previously captured transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.Sale">
+            <summary>Initiates an Sale transaction (authorization and capture).</summary>
+        </member>
+        <member name="M:DPayments.InPay.Retail.VoidTransaction(System.String)">
+            <summary>Voids a previously authorized transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(System.String)">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(System.Byte[])">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.String,System.String,System.String)">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.String,System.String,System.String,System.String)">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.String,System.String,System.Byte[])">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.Byte[],System.String,System.String)">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.Byte[],System.String,System.String,System.String)">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Certificate.#ctor(DPayments.InPay.CertStoreTypes,System.Byte[],System.String,System.Byte[])">
+            <summary>This is the digital certificate being used.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.EffectiveDate">
+            <summary>The date on which this certificate becomes valid.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.ExpirationDate">
+            <summary>The date on which the certificate expires.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.ExtendedKeyUsage">
+            <summary>A comma-delimited list of extended key usage identifiers.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Fingerprint">
+            <summary>The hex-encoded, 16-byte MD5 fingerprint of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.FingerprintSHA1">
+            <summary>The hex-encoded, 20-byte SHA-1 fingerprint of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.FingerprintSHA256">
+            <summary>The hex-encoded, 32-byte SHA-256 fingerprint of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Issuer">
+            <summary>The issuer of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PrivateKey">
+            <summary>The private key of the certificate (if available).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PrivateKeyAvailable">
+            <summary>Whether a PrivateKey is available for the  selected certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PrivateKeyContainer">
+            <summary>The name of the PrivateKey container for the  certificate (if available).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PublicKey">
+            <summary>The public key of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PublicKeyAlgorithm">
+            <summary>The textual description of the certificate's public key algorithm.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.PublicKeyLength">
+            <summary>The length of the certificate's public key (in bits).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.SerialNumber">
+            <summary>The serial number of the certificate encoded as a  string.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.SignatureAlgorithm">
+            <summary>The text description of the certificate's signature algorithm.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.StoreB">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Store">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.StorePassword">
+            <summary>If the type of certificate store requires  a password, this property is used to specify the password needed to open the certificate store.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.StoreType">
+            <summary>The type of certificate store for this certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.SubjectAltNames">
+            <summary>Comma-separated lists of alternative subject names for the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.ThumbprintMD5">
+            <summary>The MD5 hash of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.ThumbprintSHA1">
+            <summary>The SHA-1 hash of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.ThumbprintSHA256">
+            <summary>The SHA-256 hash of the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Usage">
+            <summary>The text description of UsageFlags .</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.UsageFlags">
+            <summary>The flags that show intended use for the certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Version">
+            <summary>The certificate's version number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Subject">
+            <summary>The subject of the certificate used for client authentication.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.EncodedB">
+            <summary>The certificate (PEM/Base64 encoded).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Certificate.Encoded">
+            <summary>The certificate (PEM/Base64 encoded).</summary>
+        </member>
+        <member name="M:DPayments.InPay.CertExtension.#ctor(System.String,System.Byte[],System.Boolean)">
+            <summary>This represents an extension for a certificate.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertExtension.Critical">
+            <summary>This property specifies whether or not the extension is defined as critical.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertExtension.OID">
+            <summary>This property contains the ASN.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertExtension.ValueB">
+            <summary>This property contains the raw value of the certificate extension.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CertExtension.Value">
+            <summary>This property contains the raw value of the certificate extension.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CheckDetail.#ctor">
+            <summary>Contains information about a check to be written to file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.Amount">
+            <summary>The US dollar value of the check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BackImageCreationDate">
+            <summary>Date assigned by the image creator for the image contained in BackImageData .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BackImageDataB">
+            <summary>This property contains the scanned image of the back of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BackImageData">
+            <summary>This property contains the scanned image of the back of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BackImageFileName">
+            <summary>This property contains location of a scanned image of the back of the physical check, in the format  specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BackImageReferenceKey">
+            <summary>A designator assigned by the ECE institution that uniquely identifies the BackImageData .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BOFDAccountNumber">
+            <summary>A number that identifies the depository account at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BOFDBranch">
+            <summary>A code that identifies the branch at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BOFDConversionIndicator">
+            <summary>A code that indicates the conversion within the processing institution between original paper check, image, and IRD.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BOFDRoutingNumber">
+            <summary>A number that identifies the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.BOFDTruncator">
+            <summary>Identifies if this BOFD is the truncator of the original check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.CanRecreateImages">
+            <summary>A code that indicates whether the sender has the ability to recreate the check images  (from the original source) for the duration of the agreed to retention time frame.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.FrontImageCreationDate">
+            <summary>Date assigned by the image creator for the image contained in FrontImageData .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.FrontImageDataB">
+            <summary>This property contains the scanned image of the front of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.FrontImageData">
+            <summary>This property contains the scanned image of the front of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.FrontImageFileName">
+            <summary>This property contains location of a scanned image of the front of the physical check, in the format  specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.FrontImageReferenceKey">
+            <summary>A designator assigned by the ECE institution that uniquely identifies the FrontImageData .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.ImageCompression">
+            <summary>A code that identifies the algorithm or method used to compress the images stored in the FrontImageData and BackImageData properties.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.ImageCreatorRoutingNumber">
+            <summary>A number that identifies the financial institution that created the image (if different from BOFDRoutingNumber ).</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.ImageFormat">
+            <summary>A code that identifies the type of image format used for the images contained in the FrontImageData and BackImageData properties.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.MICRAuxOnUs">
+            <summary>A code used on commercial checks at the discretion of the payor bank, read off of the MICR line on a check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.MICROnUs">
+            <summary>Account number data specified by the payor bank and read from the MICR line on a check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.MICRProcessingCode">
+            <summary>The external processing code from the MICR line of a check, if present.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.MICRRoutingNumber">
+            <summary>Payor bank routing number, read from the MICR line of a check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.PayeeName">
+            <summary>The name of the payee from the check.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CheckDetail.SequenceNumber">
+            <summary>ECE Institution Item Sequence Number, assigned by the institution that creates the file.</summary>
+        </member>
+        <member name="M:DPayments.InPay.FTPSettings.#ctor">
+            <summary>Used to connect to an FTP or FTPS server for uploading X9.37 files.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.Password">
+            <summary>The password to login with.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.RemoteFile">
+            <summary>The name of the file as it will appear on the server after upload.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.RemoteHost">
+            <summary>The domain name or IP address of the FTP server the file is to be uploaded to.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.RemotePath">
+            <summary>The current path on the FTP server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.RemotePort">
+            <summary>The port for the FTP service (default is 21).</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.Timeout">
+            <summary>A timeout to use when uploading via FTP.</summary>
+        </member>
+        <member name="P:DPayments.InPay.FTPSettings.User">
+            <summary>The user id to login as.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Origin.#ctor">
+            <summary>Specifies the originator of a file and the checks contained within.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Origin.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>Specifies the originator of a file and the checks contained within.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Origin.ContactName">
+            <summary>A contact at the institution that creates the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Origin.ContactPhone">
+            <summary>The phone number of the ContactName at the institution that created the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Origin.OriginName">
+            <summary>The short name of the ECE institution that created the file.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Origin.RoutingNumber">
+            <summary>A number that identifies the ECE institution that originates the file.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalCard.#ctor">
+            <summary>Use this type to define the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalCard.#ctor(DPayments.InPay.CardTypes,System.String,System.Int32,System.Int32)">
+            <summary>Use this type to define the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalCard.#ctor(DPayments.InPay.CardTypes,System.String,System.Int32,System.Int32,System.String)">
+            <summary>Use this type to define the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalCard.CardType">
+            <summary>This property specifies the type of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalCard.CVV">
+            <summary>Three digit security code on back of card (optional).</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalCard.ExpMonth">
+            <summary>This field contains the expiration month of the customer's credit card.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalCard.ExpYear">
+            <summary>This field contains the 4 digit expiration year of the customer's credit card.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalCard.Number">
+            <summary>This field contains the customer's credit card number for this transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Firewall.#ctor">
+            <summary>The firewall the component will connect through.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.AutoDetect">
+            <summary>Whether to automatically detect and use firewall system settings, if available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.FirewallType">
+            <summary>The type of firewall to connect through.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.Host">
+            <summary>The name or IP address of the firewall (optional).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.Password">
+            <summary>A password if authentication is to be used when connecting through the firewall.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.Port">
+            <summary>The Transmission Control Protocol (TCP) port for the firewall Host .</summary>
+        </member>
+        <member name="P:DPayments.InPay.Firewall.User">
+            <summary>A username if authentication is to be used when connecting through a firewall.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPaymentItem.#ctor">
+            <summary>The item being purchased.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPaymentItem.#ctor(System.String)">
+            <summary>The item being purchased.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPaymentItem.#ctor(System.String,System.String)">
+            <summary>The item being purchased.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPaymentItem.#ctor(System.String,System.String,System.String)">
+            <summary>The item being purchased.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPaymentItem.#ctor(System.String,System.String,System.String,System.Int32)">
+            <summary>The item being purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Amount">
+            <summary>Amount of charged on payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Description">
+            <summary>Paypal item description for the shopping cart.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Name">
+            <summary>Name of the item purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Number">
+            <summary>Item number set by the merchant.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Options">
+            <summary>Paypal item options for the shopping cart.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.Quantity">
+            <summary>Quantity of items ordered.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPaymentItem.SalesTax">
+            <summary>Amount of tax charged on payment.</summary>
+        </member>
+        <member name="M:DPayments.InPay.DirectPaymentPayer.#ctor">
+            <summary>The payer of the direct payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.City">
+            <summary>Payer's city name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.CountryCode">
+            <summary>Payer's country code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.CountryName">
+            <summary>Payer's country name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.Email">
+            <summary>Email address of the payer.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.FirstName">
+            <summary>Payer's first name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.IPAddress">
+            <summary>IP address of the payer's browser as recorded in its HTTP request to your website.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.LastName">
+            <summary>Payer's last name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.State">
+            <summary>Payer's state or province name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.Status">
+            <summary>Indicates whether the payer is verified or not.</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.Street1">
+            <summary>Payer's street address (first line).</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.Street2">
+            <summary>Payer's street address (second line).</summary>
+        </member>
+        <member name="P:DPayments.InPay.DirectPaymentPayer.Zip">
+            <summary>Payer's United States ZIP code or other country-specific postal code.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalPayment.#ctor">
+            <summary>This type describes the payment that has been processed with PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.Date">
+            <summary>This is the time/date stamp of payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.ExchangeRate">
+            <summary>Exchange rate if a currency conversion occurred.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.FeeAmount">
+            <summary>PayPal fee amount charged for the transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.GrossAmount">
+            <summary>The final amount charged.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.PaymentType">
+            <summary>Indicates whether the payment is instant or delayed.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.PendingReason">
+            <summary>The reason the payment is pending.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.SettleAmount">
+            <summary>Amount deposited in your PayPal account after a currency conversion.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.Status">
+            <summary>Status of the payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.TaxAmount">
+            <summary>Tax charged on the transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.TransactionId">
+            <summary>Unique transaction ID of the payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalPayment.TransactionType">
+            <summary>The type of transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Proxy.#ctor">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Proxy.#ctor(System.String,System.Int32)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:DPayments.InPay.Proxy.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.AuthScheme">
+            <summary>The type of authorization to perform when connecting to the proxy.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.AutoDetect">
+            <summary>Whether to automatically detect and use proxy system settings, if available.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.Password">
+            <summary>A password if authentication is to be used for the proxy.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.Port">
+            <summary>The Transmission Control Protocol (TCP) port for the proxy Server (default 80).</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.Server">
+            <summary>If a proxy Server is given, then the HTTP request is sent to the proxy instead of the server otherwise specified.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.SSL">
+            <summary>When to use a Secure Sockets Layer (SSL) for the connection to the proxy.</summary>
+        </member>
+        <member name="P:DPayments.InPay.Proxy.User">
+            <summary>A username if authentication is to be used for the proxy.</summary>
+        </member>
+        <member name="M:DPayments.InPay.PayPalResponse.#ctor">
+            <summary>The response from the transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalResponse.Amount">
+            <summary>Amount returned in the response.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalResponse.AVS">
+            <summary>The Address Verification System response code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalResponse.CVV">
+            <summary>Result of the CVV check by PayPal.</summary>
+        </member>
+        <member name="P:DPayments.InPay.PayPalResponse.TransactionId">
+            <summary>Unique Transaction Id of the payment.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPBank.#ctor">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPBank.#ctor(System.String,System.String,DPayments.InPay.AccountClass,DPayments.InPay.AccountTypes)">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPBank.#ctor(System.String,System.String,DPayments.InPay.AccountClass,DPayments.InPay.AccountTypes,System.String,System.String)">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.AccountClass">
+            <summary>Indicates whether a personal or business account is used for this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.AccountHolderName">
+            <summary>Account holder's name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.AccountNumber">
+            <summary>Bank account number for ACH transactions.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.AccountType">
+            <summary>Indicates whether a checking or savings account is used for this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.Name">
+            <summary>Name of the account holder's bank.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPBank.RoutingNumber">
+            <summary>Routing number for ACH transactions.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPCustomer.#ctor">
+            <summary>Contains customer information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Address">
+            <summary>Customer's street address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Address2">
+            <summary>A specific detail on the customer's shipping address (such as building, suite, apartment, floor number etc.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Aggregate">
+            <summary>This property allows you to get or set an XML aggregate built from all of the Customer properties.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.City">
+            <summary>Customer's city.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Country">
+            <summary>Customer's country.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Email">
+            <summary>Customer's email address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Fax">
+            <summary>Customer's fax number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.FirstName">
+            <summary>Customer's first name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.FullName">
+            <summary>Customer's full name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Id">
+            <summary>Merchant-generated customer Id.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.LastName">
+            <summary>Customer's last name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Phone">
+            <summary>Customer's phone number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.State">
+            <summary>Customer's state.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCustomer.Zip">
+            <summary>Customer's zip code (or postal code if outside of the USA).</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPResponse.#ctor">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.ApprovalCode">
+            <summary>Contains an authorization code when a transaction has been approved.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.Approved">
+            <summary>Indicates the status of the last transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.ApprovedAmount">
+            <summary>The amount approved for the transaction, this is the amount actually charged to the credit card.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.AVSResult">
+            <summary>Contains the Address Verification System result code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.Code">
+            <summary>Indicates the status of the authorization request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.CVVResult">
+            <summary>Contains the returned CVV2 result code if it was requested.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.Data">
+            <summary>The entire response returned from the gateway processor.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.ErrorCode">
+            <summary>Additional error code returned by some gateways.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.ErrorText">
+            <summary>Additional error description returned by some gateways.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.InvoiceNumber">
+            <summary>Invoice number submitted in authorization request (if applicable).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.ProcessorCode">
+            <summary>Response code from the underlying processor.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.Text">
+            <summary>Text information that describes each response code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPResponse.TransactionId">
+            <summary>Contains the Visa Transaction Identifier or MasterCard Reference Number.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPSpecialField.#ctor">
+            <summary>Additional name/value pairs which can be added to a transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPSpecialField.#ctor(System.String,System.String)">
+            <summary>Additional name/value pairs which can be added to a transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSpecialField.Name">
+            <summary>Name of special configuration field to submit in this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSpecialField.Value">
+            <summary>Value of special configuration field to submit in this transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.ExpressCheckoutPayer.#ctor">
+            <summary>The payer of the express checkout.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Business">
+            <summary>Payer's business email address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.City">
+            <summary>Payer's city name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.CountryCode">
+            <summary>Payer's country code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Email">
+            <summary>Email address of the payer.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.FirstName">
+            <summary>Payer's first name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.LastName">
+            <summary>Payer's last name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.State">
+            <summary>Payer's state or province name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Status">
+            <summary>Indicates whether the payer is verified or not.</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Street1">
+            <summary>Payer's street address (first line).</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Street2">
+            <summary>Payer's street address (second line).</summary>
+        </member>
+        <member name="P:DPayments.InPay.ExpressCheckoutPayer.Zip">
+            <summary>Payer's United States ZIP code or other country-specific postal code.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPCard.#ctor">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPCard.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPCard.#ctor(System.String,System.Int32,System.Int32,System.String)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.Aggregate">
+            <summary>This property allows you to get or set an XML aggregate built from all of the Card properties.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.CardType">
+            <summary>Type of credit card being used in this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.CVVData">
+            <summary>Three digit security code on back of card (optional).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.CVVPresence">
+            <summary>Indicates the presence of the card verification value.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.ExpMonth">
+            <summary>Expiration month of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.ExpYear">
+            <summary>Expiration year of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.IsEncrypted">
+            <summary>Determines whether data set to the Number property is validated.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPCard.Number">
+            <summary>Customer's credit card number for the transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPShipInfo.#ctor">
+            <summary>Contains shipping information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Address">
+            <summary>Customer's shipping street address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Address2">
+            <summary>A specific detail on the customer's shipping address (such as building, suite, apartment, floor number etc.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.City">
+            <summary>Customer's shipping city.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Country">
+            <summary>Customer's shipping country.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Email">
+            <summary>Customer's email address.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.FirstName">
+            <summary>Customer's first name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.LastName">
+            <summary>Customer's last name.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Phone">
+            <summary>Customer's phone number.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.State">
+            <summary>Customer's shipping state.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPShipInfo.Zip">
+            <summary>Customer's shipping zip code (or postal code if outside of the USA).</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPLineItem.#ctor">
+            <summary>Contains a single Level 3 line item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.CommodityCode">
+            <summary>Code indicating the type of goods or services sold.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Description">
+            <summary>Description of the item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.DiscountAmount">
+            <summary>Amount of the discount for each line item (if any).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.DiscountRate">
+            <summary>Rate of the discount for each line item (if any).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Name">
+            <summary>Name of the item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.ProductCode">
+            <summary>Product code of the item purchased.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Quantity">
+            <summary>Quantity of items in this Line Item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Taxable">
+            <summary>Specifies whether the items in this Line Item are taxable.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.TaxAmount">
+            <summary>Tax on this individual item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.TaxRate">
+            <summary>Tax rate used to calculate the TaxAmount .</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.TaxType">
+            <summary>Type of tax charged in TaxAmount .</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Total">
+            <summary>Total cost of this line item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.UnitCost">
+            <summary>Cost of each individual item.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPLineItem.Units">
+            <summary>Unit of measure for this Line Item.</summary>
+        </member>
+        <member name="M:DPayments.InPay.HTTPCookie.#ctor">
+            <summary>An HTTP cookie can be either sent to or received from the server.</summary>
+        </member>
+        <member name="M:DPayments.InPay.HTTPCookie.#ctor(System.String,System.String)">
+            <summary>An HTTP cookie can be either sent to or received from the server.</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Domain">
+            <summary>The domain of a received cookie.</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Expiration">
+            <summary>An expiration time for the cookie (if provided by the server).</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Name">
+            <summary>The name of the cookie.</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Path">
+            <summary>A path name to limit the cookie to (if provided by the server).</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Secure">
+            <summary>The security flag of the received cookie.</summary>
+        </member>
+        <member name="P:DPayments.InPay.HTTPCookie.Value">
+            <summary>The value of the cookie.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuthParam.#ctor">
+            <summary>This is the parameter to be used in the request or received in the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.OAuthParam.#ctor(System.String,System.String)">
+            <summary>This is the parameter to be used in the request or received in the response.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuthParam.Name">
+            <summary>The name of the parameter to be used in the request or returned in the response.</summary>
+        </member>
+        <member name="P:DPayments.InPay.OAuthParam.Value">
+            <summary>The value of the parameter to be used in the request or returned in the response.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CCCard.#ctor">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CCCard.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:DPayments.InPay.CCCard.#ctor(System.String,DPayments.InPay.EntryDataSources)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.CardType">
+            <summary>Type of credit card being used in this transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.CVVData">
+            <summary>Three digit security code on back of card (optional).</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.CVVPresence">
+            <summary>Indicates the presence of the card verification value.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.EntryDataSource">
+            <summary>This property contains a 1-character code identifying the source of the customer data.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.ExpMonth">
+            <summary>Expiration month of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.ExpYear">
+            <summary>Expiration year of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.IsEncrypted">
+            <summary>Determines whether data set to the Number or MagneticStripe fields is validated.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.MagneticStripe">
+            <summary>Track data read off of the card's magnetic stripe.</summary>
+        </member>
+        <member name="P:DPayments.InPay.CCCard.Number">
+            <summary>Customer's credit card number for the transaction.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPPaymentSchedule.#ctor">
+            <summary>Contains the recurring payment schedule.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.EndDate">
+            <summary>The end date of the subscription.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.Frequency">
+            <summary>The frequency of payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.FrequencyUnit">
+            <summary>The unit of time to be used when calculating the frequency of payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.InitialAmount">
+            <summary>The initial amount to be charged (such as a trial period or setup fee).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.RecurAmount">
+            <summary>The amount to be charged on a recurring basis.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.StartDate">
+            <summary>The date on which the recurring payments will start processing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.TotalPayments">
+            <summary>The total number of payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPPaymentSchedule.TrialPayments">
+            <summary>The total number of trial payments.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPRecurringResponse.#ctor">
+            <summary>Contains the response to the recurring transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.ApprovalCode">
+            <summary>Contains an authorization code when a transaction has been approved.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.Approved">
+            <summary>Indicates the status of the last transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.AVSResult">
+            <summary>Contains the Address Verification System result code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.Code">
+            <summary>Indicates the status of the authorization request.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.CVVResult">
+            <summary>Contains the returned CVV2 result code if it was requested.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.Data">
+            <summary>The entire response returned from the gateway processor.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.ErrorCode">
+            <summary>Additional error code returned by some gateways.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.ErrorText">
+            <summary>Additional error description returned by some gateways.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.InvoiceNumber">
+            <summary>Invoice number submitted in authorization request (if applicable).</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.ProcessorCode">
+            <summary>Response code from the underlying processor.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.SubscriptionId">
+            <summary>Contains the Subscription or Profile Identifier for the recurring payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.Text">
+            <summary>Text information that describes each response code.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPRecurringResponse.TransactionId">
+            <summary>Contains the Visa Transaction Identifier or MasterCard Reference Number.</summary>
+        </member>
+        <member name="M:DPayments.InPay.EPSubscriptionDetails.#ctor">
+            <summary>Contains the recurring subscription details.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.CardExpMonth">
+            <summary>The expiration month of the card currently being processed for the recurring payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.CardExpYear">
+            <summary>The expiration year of the card currently being processed for the recurring payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.CardNumber">
+            <summary>The card number currently being processed for the recurring payments.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.EndDate">
+            <summary>The date in which the recurring payments will stop processing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.Frequency">
+            <summary>The frequency in which payments will occur.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.FrequencyUnit">
+            <summary>The unit frequency in which the payments will be processed.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.LastPaymentDate">
+            <summary>The date that the last/previous transaction was processed.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.NextPaymentDate">
+            <summary>The date of the next upcoming transaction.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.RecurAmount">
+            <summary>The amount being charged on a recurring basis.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.RemainingPayments">
+            <summary>The total number of remaining payments until the recurring payments will stop processing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.StartDate">
+            <summary>The date in which the recurring payments started processing.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.Status">
+            <summary>The current status of the recurring subscription.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.SubscriptionId">
+            <summary>Contains the Subscription or Profile Identifier for the recurring payment.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.SubscriptionName">
+            <summary>Contains the name of the recurring subscription or profile.</summary>
+        </member>
+        <member name="P:DPayments.InPay.EPSubscriptionDetails.TotalPayments">
+            <summary>The total number of payments.</summary>
+        </member>
+        <member name="F:nsoftware.core.LoadCertificateForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:nsoftware.core.LoadCertificateForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:nsoftware.core.LoadCertificateForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:nsoftware.core.AESCCMCryptoServiceProvider.ProcessAll(nsoftware.core.AES_CCM.CCMParameter,System.Byte[],System.Int32,System.Int32,System.Boolean)">
+             encrypt or decrypt all data
+            
+             @param data data to be encrypted/decrypted. Tag is not included
+        </member>
+        <member name="M:nsoftware.core.AESOCBCryptoServiceProvider.Update(nsoftware.core.AES_OCB.OCBParameter,System.Byte[])">
+            Encrypt/Decrypt one block data.
+            @param data The length should be 16
+        </member>
+        <member name="M:nsoftware.core.AESOCBCryptoServiceProvider.DoFinalize(nsoftware.core.AES_OCB.OCBParameter,System.Byte[],System.Byte[])">
+            Encrypt/Decrypt the final block and generate tag.
+            @param data The last block.
+            @param tag  The byte array to hold the computed tag.
+        </member>
+        <member name="T:nsoftware.core.MlKem">
+             Single-file ML-KEM implementation container.
+            
+             All helpers intentionally live in this file to match the requested layout.
+             The implementation is being built from the algorithm core upward:
+             parameters, byte helpers, XOF, polynomial math, encoding, and protocol flow.
+        </member>
+        <member name="T:nsoftware.core.CAsnRevocationInfoArchival">
+              RevocationInfoArchival ::= SEQUENCE {
+                crl [0] EXPLICIT SEQUENCE of CRLs, OPTIONAL
+                ocsp [1] EXPLICIT SEQUENCE of OCSP Responses, OPTIONAL
+                otherRevInfo [2] EXPLICIT SEQUENCE of OtherRevInfo, OPTIONAL
+              }
+        </member>
+        <member name="F:nsoftware.core.CXMLReader.m_Input">
+            ////////////////////////////////////////////////////
+                Text Reader Implementation
+            ////////////////////////////////////////////////////
+        </member>
+        <member name="F:nsoftware.core.CXMLReader.m_PeekNode">
+            ////////////////////////////////////////////////////
+                XML Reader Implementation
+            ////////////////////////////////////////////////////
+        </member>
+    </members>
+</doc>

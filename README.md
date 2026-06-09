@@ -54,6 +54,42 @@ Open the Run view (`Ctrl+Shift+D`) and select one of the launch configurations:
 
 Each launch configuration builds all demos first, then launches the selected WinForms executable.
 
+## Secure local configuration
+
+A secure local config file allows you to keep credentials and gateway settings out of source control.
+
+1. Copy `local.settings.json.example` to `local.settings.json`.
+2. Fill in your sandbox or production values for the demo you are running.
+3. Keep `local.settings.json` local only; it is ignored by git.
+
+Example values in the sample file include:
+
+- `DPayments.Ofx.FiUrl`
+- `DPayments.Ofx.FiOrganization`
+- `DPayments.Ofx.FiId`
+- `DPayments.Ofx.OfxUser`
+- `DPayments.Ofx.OfxPassword`
+- `DPayments.Gateway.Url`
+- `DPayments.Gateway.MerchantId`
+- `DPayments.Gateway.ApiKey`
+
+If you want, you can extend the demo source code to load values from `local.settings.json` at runtime and populate the form fields automatically.
+
+## GitHub Actions
+
+A GitHub Actions workflow has been added at `.github/workflows/dotnet.yml`.
+It restores and builds the Account Info demo on `push` and `pull_request` events to validate the converted .NET 6 project.
+
+## E-Payment Integrator Integration
+
+A new integration folder has been added at `E-Payment Integrator 2024 .NET Edition/`.
+It includes a copy of the local E-Payment Integrator installation documentation and runtime libraries so the repository can reference the new edition alongside the existing 4D E-Banking SDK demos.
+
+- `E-Payment Integrator 2024 .NET Edition/help/`
+- `E-Payment Integrator 2024 .NET Edition/lib/`
+- `E-Payment Integrator 2024 .NET Edition/readme.txt`
+- `E-Payment Integrator 2024 .NET Edition/README.md`
+
 ## Notes
 
 - Each demo uses the workspace demo folder as its working directory.

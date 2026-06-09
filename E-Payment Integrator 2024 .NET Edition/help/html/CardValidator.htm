@@ -1,0 +1,3630 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>E-Payment Integrator 2024 .NET Edition Reference</title>
+	<meta name="description" 	content="Retail Demo .NET Edition Reference" />
+	<meta name="author" 		content="www.4dpayments.com"> 
+	<meta name="generator" 		content="Retail Demo (E-Payment Integrator 2024 .NET Edition [DPNJA Build 9622]);">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/default.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/main.css?v=9622" />
+  <link rel="stylesheet" type="text/css" href="../lib/icons.css?v=9622" />
+  <link rel="canonical" href="https://cdn.4dpayments.com/help/DPJ/cs" />
+  	  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WXV8L54S"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-WXV8L54S');</script>
+  <style>:root{--main-color:#307e4a}</style>
+</head>
+
+<body class="bg-light-subtle">
+  <header class="navbar navbar-expand-lg help-navbar sticky-top bg-white shadow-sm">
+    <nav class="container-fluid container-fluid pe-lg-5 ps-lg-4 py-1 ms-2">
+      <div class="d-flex align-items-center justify-content-md-between w-100">
+        <div class="help-navbar-toggle d-lg-none me-2">
+          <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+            <svg version="1.1" id="Layer_1" height="18" width="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.6 16" style="enable-background:new 0 0 25.6 16;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#444444;}
+              </style>
+              <rect x="-0.2" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="7" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="13.9" class="st0" width="25.8" height="2.1"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="d-flex">
+          <a class="p-0 me-0 me-lg-2" href="https://www.4dpayments.com/">
+	
+			<img src="help_logo.svg" height="25px" class="logo logo-company"/>		
+			
+          </a>
+          <div class="dropdown">
+            <a href="default.htm" class="d-none d-md-flex common-title" id="help-editions-toggle">
+              E-Payment Integrator 2024 .NET Edition
+              <span class="ms-1 d-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg>
+              </span>
+            </a>
+            <div id="help-editions" class="dropdown-menu">
+                              
+                <li class="dropdown-item"><a href="../acx/default.htm">E-Payment Integrator 2024 ActiveX Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../java/default.htm">E-Payment Integrator 2024 Android Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../bcb/default.htm">E-Payment Integrator 2024 C++ Builder Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cpp/default.htm">E-Payment Integrator 2024 C++ Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cs/default.htm">E-Payment Integrator 2024 .NET Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../dlp/default.htm">E-Payment Integrator 2024 Delphi Edition</a></li>
+                                  
+                                
+                <li class="dropdown-item"><a href="../mac/default.htm">E-Payment Integrator 2024 macOS Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../php/default.htm">E-Payment Integrator 2024 PHP Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../py/default.htm">E-Payment Integrator 2024 Python Edition</a></li>
+                                  
+                            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 fs-13px d-none d-md-block">Version 24.0  [Build 9622]</div>
+      </div>
+    </nav>
+  </header>
+
+    
+  <div class="help-layout container-fluid wide g-0">
+    <aside class="help-sidebar">
+      <nav class="offcanvas-lg offcanvas-start" id="menuSidebar" tabindex="-1">
+        <button class="navbar-toggler p-3 pe-4 border-0 d-flex d-lg-none justify-content-end mt-2 mr-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+          <svg version="1.1" id="Layer_1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 19.9 19.9" style="enable-background:new 0 0 19.9 19.9;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#444444;}
+            </style>
+            <rect x="-3.1" y="8.9" transform="matrix(0.7071 0.7071 -0.7071 0.7071 9.9235 -4.05)" class="st0" width="25.8" height="2.1"/>
+            <rect x="-2.9" y="8.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 24.0561 9.9432)" class="st0" width="25.8" height="2.1"/>
+          </svg>
+        </button>
+
+        <div id="toc-search" class="dropdown toc-search mt-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+          </svg>
+          <input class="w-100" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" />
+          <div class="dropdown-menu w-100">
+          </div>
+        </div>
+
+        <div id="sidebarMenu" class="sidebar-menu h-100">
+
+
+<!--  BEGIN TOC CONTENT -->
+<UL>
+  <LI>
+  <a href="default.htm">E-Payment Integrator 2024 .NET Edition</a>
+
+  <UL>
+
+
+  <LI> 
+    <a href="default.htm">Introduction</a>
+
+ 
+ 
+
+  <LI> 
+    <a href="samples.htm">Sample Projects</a>
+ 
+
+  <LI> 
+    <a href="licensing.htm#licensing">Licensing Instructions</a>
+    
+
+    
+
+
+  
+    <LI>
+      <a href="pages.htm#pg_icbasiccardinfo" data-bs-toggle="collapse" data-bs-target="#m_pg_icbasiccardinfo">Basic Credit Card Information</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_respcodes" data-bs-toggle="collapse" data-bs-target="#m_pg_respcodes">Gateway Response Codes</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_icgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_icgatewaysetup">ICharge Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_ecgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_ecgatewaysetup">ECheck Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_recgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_recgatewaysetup">RecurringBilling Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_testinginfo" data-bs-toggle="collapse" data-bs-target="#m_pg_testinginfo">Testing Information</a>
+      
+
+
+
+
+  <LI>
+    <a data-bs-toggle="collapse" data-bs-target="#ComponentACHConverter" aria-expanded="true"><span class="ci"></span>Component Reference</a>
+    <UL class="collapse show" id="ComponentACHConverter">
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageACHConverter"></span><a href="ACHConverter.htm#ACHConverter">ACHConverter Component</a>
+  <UL class="collapse" id="pageACHConverter">
+    <LI> 
+      <a href="ACHConverter.htm#ACHConverter">Introduction</a>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#Properties_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ACHConverter"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ACHConverter">
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBatchCount">FileBatchCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBlockCount">FileBlockCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileCreditTotal">FileCreditTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileDebitTotal">FileDebitTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryCount">FileEntryCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryHash">FileEntryHash</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputFile">InputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputString">InputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputFile">OutputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputString">OutputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_Schema">Schema</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_VerifyMode">VerifyMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ACHConverter.htm#Methods_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ACHConverter"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertACH">ConvertACH</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertXML">ConvertXML</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetInputStream">SetInputStream</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetOutputStream">SetOutputStream</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ACHConverter.htm#Events_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Events_ci_ACHConverter"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCardValidator"></span><a href="CardValidator.htm#CardValidator">CardValidator Component</a>
+  <UL class="collapse" id="pageCardValidator">
+    <LI> 
+      <a href="CardValidator.htm#CardValidator">Introduction</a>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#Properties_CardValidator" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CardValidator"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CardValidator">
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpMonth">CardExpMonth</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpYear">CardExpYear</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardNumber">CardNumber</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardType">CardType</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardTypeDescription">CardTypeDescription</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DateCheckPassed">DateCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DigitCheckPassed">DigitCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackData">TrackData</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackType">TrackType</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CardValidator.htm#Methods_CardValidator" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CardValidator"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_ValidateCard">ValidateCard</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CardValidator.htm#Events_CardValidator" data-bs-toggle="collapse" data-bs-target="#Events_ci_CardValidator"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCertMgr"></span><a href="CertMgr.htm#CertMgr">CertMgr Component</a>
+  <UL class="collapse" id="pageCertMgr">
+    <LI> 
+      <a href="CertMgr.htm#CertMgr">Introduction</a>
+
+
+
+    <LI>
+      <a href="CertMgr.htm#Properties_CertMgr" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CertMgr"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CertMgr">
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_Cert">Cert</a>
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertExtensions">CertExtensions (Collection)</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStore">CertStore</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStorePassword">CertStorePassword</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStoreType">CertStoreType</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportedCert">ExportedCert</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportFormat">ExportFormat</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportPrivateKey">ExportPrivateKey</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Methods_CertMgr" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CertMgr"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckCRL">CheckCRL</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckOCSP">CheckOCSP</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateCertificate">CreateCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateKey">CreateKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteCertificate">DeleteCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteKey">DeleteKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ExportCertificate">ExportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_GenerateCSR">GenerateCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportCertificate">ImportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportSignedCSR">ImportSignedCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_IssueCertificate">IssueCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListCertificateStores">ListCertificateStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListKeys">ListKeys</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListMachineStores">ListMachineStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListStoreCertificates">ListStoreCertificates</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCertificate">ReadCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCSR">ReadCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SaveCertificate">SaveCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ShowCertificateChain">ShowCertificateChain</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SignCSR">SignCSR</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#Events_CertMgr" data-bs-toggle="collapse" data-bs-target="#Events_ci_CertMgr"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertChain">CertChain</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertList">CertList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_KeyList">KeyList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_StoreList">StoreList</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Types_CertMgr" data-bs-toggle="collapse" data-bs-target="#Types_ci_CertMgr"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_CertMgr">
+      <LI>
+        <a href="CertMgr.htm#Type_CertExtension">CertExtension</a>        
+
+      <LI>
+        <a href="CertMgr.htm#Type_Certificate">Certificate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCheck21"></span><a href="Check21.htm#Check21">Check21 Component</a>
+  <UL class="collapse" id="pageCheck21">
+    <LI> 
+      <a href="Check21.htm#Check21">Introduction</a>
+
+
+
+    <LI>
+      <a href="Check21.htm#Properties_Check21" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Check21"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Check21">
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_BusinessDate">BusinessDate</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CashLetterId">CashLetterId</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Checks">Checks (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CollectionType">CollectionType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CycleNumber">CycleNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationName">DestinationName</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationRoutingNumber">DestinationRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DocumentationType">DocumentationType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileData">FileData</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileName">FileName</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_FTP">FTP</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Origin">Origin</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_RecordType">RecordType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_ReturnRoutingNumber">ReturnRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SettlementDate">SettlementDate</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLStartMode">SSLStartMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Methods_Check21" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Check21"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildAndUploadFile">BuildAndUploadFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildFile">BuildFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Reset">Reset</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Events_Check21" data-bs-toggle="collapse" data-bs-target="#Events_ci_Check21"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Status">Status</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Types_Check21" data-bs-toggle="collapse" data-bs-target="#Types_ci_Check21"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Check21">
+      <LI>
+        <a href="Check21.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_CheckDetail">CheckDetail</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_FTPSettings">FTPSettings</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_Origin">Origin</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Check21Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Check21.htm#Check21Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageDirectPayment"></span><a href="DirectPayment.htm#DirectPayment">DirectPayment Component</a>
+  <UL class="collapse" id="pageDirectPayment">
+    <LI> 
+      <a href="DirectPayment.htm#DirectPayment">Introduction</a>
+
+
+
+    <LI>
+      <a href="DirectPayment.htm#Properties_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Properties_ci_DirectPayment"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_DirectPayment">
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Authorization">Authorization</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ItemTotal">ItemTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_MerchantSessionId">MerchantSessionId</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payer">Payer</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payment">Payment</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Response">Response</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Methods_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Methods_ci_DirectPayment"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#Events_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Events_ci_DirectPayment"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Types_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Types_ci_DirectPayment"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_DirectPayment">
+      <LI>
+        <a href="DirectPayment.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_DirectPaymentPayer">DirectPaymentPayer</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalCard">PayPalCard</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalResponse">PayPalResponse</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageECheck"></span><a href="ECheck.htm#ECheck">ECheck Component</a>
+  <UL class="collapse" id="pageECheck">
+    <LI> 
+      <a href="ECheck.htm#ECheck">Introduction</a>
+
+
+
+    <LI>
+      <a href="ECheck.htm#Properties_ECheck" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ECheck"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ECheck">
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Bank">Bank</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CheckNumber">CheckNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CompanyName">CompanyName</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseDOB">LicenseDOB</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseNumber">LicenseNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseState">LicenseState</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantPassword">MerchantPassword</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_PaymentType">PaymentType</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TaxId">TaxId</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Methods_ECheck" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ECheck"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#Events_ECheck" data-bs-toggle="collapse" data-bs-target="#Events_ci_ECheck"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Types_ECheck" data-bs-toggle="collapse" data-bs-target="#Types_ci_ECheck"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ECheck">
+      <LI>
+        <a href="ECheck.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#ECheckConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ECheck.htm#ECheckErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageExpressCheckout"></span><a href="ExpressCheckout.htm#ExpressCheckout">ExpressCheckout Component</a>
+  <UL class="collapse" id="pageExpressCheckout">
+    <LI> 
+      <a href="ExpressCheckout.htm#ExpressCheckout">Introduction</a>
+
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Properties_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ExpressCheckout"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ExpressCheckout">
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Authorization">Authorization</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_BuyerEmail">BuyerEmail</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_CancelURL">CancelURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ContactPhone">ContactPhone</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payer">Payer</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PayerId">PayerId</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payment">Payment</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PaymentAction">PaymentAction</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ResponseToken">ResponseToken</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Token">Token</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Methods_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ExpressCheckout"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_CheckoutPayment">CheckoutPayment</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetCheckoutDetails">GetCheckoutDetails</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_SetCheckout">SetCheckout</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#Events_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Events_ci_ExpressCheckout"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Types_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Types_ci_ExpressCheckout"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ExpressCheckout">
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_ExpressCheckoutPayer">ExpressCheckoutPayer</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageICharge"></span><a href="ICharge.htm#ICharge">ICharge Component</a>
+  <UL class="collapse" id="pageICharge">
+    <LI> 
+      <a href="ICharge.htm#ICharge">Introduction</a>
+
+
+
+    <LI>
+      <a href="ICharge.htm#Properties_ICharge" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ICharge"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ICharge">
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Methods_ICharge" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ICharge"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#Events_ICharge" data-bs-toggle="collapse" data-bs-target="#Events_ci_ICharge"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Types_ICharge" data-bs-toggle="collapse" data-bs-target="#Types_ci_ICharge"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ICharge">
+      <LI>
+        <a href="ICharge.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCard">EPCard</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#IChargeConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ICharge.htm#IChargeErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel2"></span><a href="Level2.htm#Level2">Level2 Component</a>
+  <UL class="collapse" id="pageLevel2">
+    <LI> 
+      <a href="Level2.htm#Level2">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level2.htm#Properties_Level2" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level2"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level2">
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_DutyAmount">DutyAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_FreightAmount">FreightAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_PONumber">PONumber</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipFromZip">ShipFromZip</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipToZip">ShipToZip</a>
+
+
+      
+      <LI>
+        <a href="Level2.htm#Level2_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxAmount">TaxAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxExempt">TaxExempt</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Methods_Level2" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level2"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Events_Level2" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level2"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Types_Level2" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level2"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level2">
+      <LI>
+        <a href="Level2.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Level2Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level2.htm#Level2Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel3"></span><a href="Level3.htm#Level3">Level3 Component</a>
+  <UL class="collapse" id="pageLevel3">
+    <LI> 
+      <a href="Level3.htm#Level3">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level3.htm#Properties_Level3" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level3"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level3">
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_LineItems">LineItems (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Methods_Level3" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level3"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Events_Level3" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level3"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Types_Level3" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level3"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level3">
+      <LI>
+        <a href="Level3.htm#Type_EPLineItem">EPLineItem</a>        
+
+      <LI>
+        <a href="Level3.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Level3Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level3.htm#Level3Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageOAuth"></span><a href="OAuth.htm#OAuth">OAuth Component</a>
+  <UL class="collapse" id="pageOAuth">
+    <LI> 
+      <a href="OAuth.htm#OAuth">Introduction</a>
+
+
+
+    <LI>
+      <a href="OAuth.htm#Properties_OAuth" data-bs-toggle="collapse" data-bs-target="#Properties_ci_OAuth"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_OAuth">
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessToken">AccessToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessTokenExp">AccessTokenExp</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationCode">AuthorizationCode</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationScope">AuthorizationScope</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientId">ClientId</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientProfile">ClientProfile</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientSecret">ClientSecret</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Connected">Connected</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Cookies">Cookies (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_FollowRedirects">FollowRedirects</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_GrantType">GrantType</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_LocalHost">LocalHost</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_OtherHeaders">OtherHeaders</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Params">Params (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_RefreshToken">RefreshToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerAuthURL">ServerAuthURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerTokenURL">ServerTokenURL</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredData">TransferredData</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredHeaders">TransferredHeaders</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_UsePKCE">UsePKCE</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerPort">WebServerPort</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLCert">WebServerSSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLEnabled">WebServerSSLEnabled</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Methods_OAuth" data-bs-toggle="collapse" data-bs-target="#Methods_ci_OAuth"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddCookie">AddCookie</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddParam">AddParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorization">GetAuthorization</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorizationURL">GetAuthorizationURL</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetParam">GetParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StartWebServer">StartWebServer</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StopWebServer">StopWebServer</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#Events_OAuth" data-bs-toggle="collapse" data-bs-target="#Events_ci_OAuth"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Connected">Connected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ConnectionStatus">ConnectionStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Disconnected">Disconnected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_EndTransfer">EndTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Header">Header</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_LaunchBrowser">LaunchBrowser</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Redirect">Redirect</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ReturnURL">ReturnURL</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SetCookie">SetCookie</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_StartTransfer">StartTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Status">Status</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Transfer">Transfer</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Types_OAuth" data-bs-toggle="collapse" data-bs-target="#Types_ci_OAuth"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_OAuth">
+      <LI>
+        <a href="OAuth.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_HTTPCookie">HTTPCookie</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_OAuthParam">OAuthParam</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#OAuthConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="OAuth.htm#OAuthErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRecurringBilling"></span><a href="RecurringBilling.htm#RecurringBilling">RecurringBilling Component</a>
+  <UL class="collapse" id="pageRecurringBilling">
+    <LI> 
+      <a href="RecurringBilling.htm#RecurringBilling">Introduction</a>
+
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Properties_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Properties_ci_RecurringBilling"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_RecurringBilling">
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Customer">Customer</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckBank">ECheckBank</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckPaymentType">ECheckPaymentType</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_PaymentSchedule">PaymentSchedule</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDesc">SubscriptionDesc</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDetails">SubscriptionDetails</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionName">SubscriptionName</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Methods_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Methods_ci_RecurringBilling"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CancelSubscription">CancelSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CreateSubscription">CreateSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetSubscriptionStatus">GetSubscriptionStatus</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_UpdateSubscription">UpdateSubscription</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#Events_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Events_ci_RecurringBilling"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Types_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Types_ci_RecurringBilling"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_RecurringBilling">
+      <LI>
+        <a href="RecurringBilling.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPPaymentSchedule">EPPaymentSchedule</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPRecurringResponse">EPRecurringResponse</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSubscriptionDetails">EPSubscriptionDetails</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRetail"></span><a href="Retail.htm#Retail">Retail Component</a>
+  <UL class="collapse" id="pageRetail">
+    <LI> 
+      <a href="Retail.htm#Retail">Introduction</a>
+
+
+
+    <LI>
+      <a href="Retail.htm#Properties_Retail" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Retail"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Retail">
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Methods_Retail" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Retail"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#Events_Retail" data-bs-toggle="collapse" data-bs-target="#Events_ci_Retail"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Types_Retail" data-bs-toggle="collapse" data-bs-target="#Types_ci_Retail"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Retail">
+      <LI>
+        <a href="Retail.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#RetailConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="Retail.htm#RetailErrors">Error Codes</a>
+
+
+  </UL>
+    </UL>
+
+
+  <LI>
+    <a href="License.htm#license">Software License</a>
+
+</UL>
+<!-- END TOC CONTENT -->
+        </div>
+      </nav>
+    </aside>
+
+    <main class="help-main bg-body shadow-sm px-4 px-lg-0 ps-lg-4">
+      <div class="help-toc d-none d-lg-block">
+        <nav id="helpToc" class="ps-3 pb-4 mb-4">
+        </nav>
+      </div>
+      <div class="help-content pt-3" id="helpContent">
+
+
+
+<h1 id="CardValidator">CardValidator Component</h1>
+
+<p>
+<a href="#CardValidator_Properties">Properties</a> &nbsp; 
+<a href="#CardValidator_Methods">Methods</a> &nbsp; 
+<a href="#CardValidator_Events">Events</a> &nbsp; 
+<a href="#CardValidator_Configs">Config Settings</a> &nbsp; 
+<a href="#CardValidatorErrors">Errors</a> &nbsp;  
+</p>
+
+
+<p>The <B> CardValidator </B> component is used to verify that a given credit card number is formatted 
+properly, and <I> could be </I> a valid card number. Validating a card before actually submitting a 
+transaction for authorization can reduce the fees that may be associated with invalid or declined 
+transactions.</p>
+
+<h2 id="CardValidator_Syntax">Syntax</h2>
+<pre class="syntax"><b>DPayments.InPay.<a href="javascript:void(0)">CardValidator</a></b></pre>
+
+<h2 id="CardValidator_Remarks">Remarks</h2>
+
+
+<p>Utilization of this component catches accidentally mistyped card numbers and allows buyers to re-input 
+their number without having the transaction declined. It can also determine the type of credit card 
+(Visa, MasterCard, Discover, etc) to easily determine if the customer is presenting a payment type which 
+you do not support. The component can also parse swiped track data and perform these same checks on it.</p>
+
+<p>There are three checks performed on the customer's credit card information:
+<div class='table-responsive'><table class='table'><tr class='d-none'><td /><td /><tr><td class='text-nowrap'></td><td class='text-start'>The card number is checked for validity using the Luhn mod-10 algorithm.</td><tr><td class='text-nowrap'></td><td class='text-start'>The type of the card (Visa, MasterCard, etc.) is computed from the card number.</td><tr><td class='text-nowrap'></td><td class='text-start'>The expiration date is checked against the current system date.</td></tr></table></div>
+The <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method explains these checks in more detail.
+
+
+
+
+</p>
+
+
+
+<h2 id="CardValidator_Properties">Property List</h2>
+<hr/>
+<p><i>The following is the full list of the properties of the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+
+<tr valign="top"><td><a href="#CardValidator_p_CardExpMonth">CardExpMonth</a></td><td>Expiration month of the credit card specified in <a href="#CardValidator_p_CardNumber">CardNumber</a> .</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_CardExpYear">CardExpYear</a></td><td>Expiration year of the credit card specified in <a href="#CardValidator_p_CardNumber">CardNumber</a> .</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_CardNumber">CardNumber</a></td><td>Credit card number to be validated.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_CardType">CardType</a></td><td>Indicates the results of the Luhn Digit Check algorithm.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_CardTypeDescription">CardTypeDescription</a></td><td>Human-readable description of the <a href="#CardValidator_p_CardType">CardType</a></td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_DateCheckPassed">DateCheckPassed</a></td><td>Indicates whether the card is expired or not.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_DigitCheckPassed">DigitCheckPassed</a></td><td>Indicates the results of the Luhn Digit Check algorithm.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_TrackData">TrackData</a></td><td>Magnetic stripe data read off the credit card.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#CardValidator_p_TrackType">TrackType</a></td><td>Indicates the type of the specified <a href="#CardValidator_p_TrackData">TrackData</a> .</td></tr>
+
+
+</table>
+</div>
+
+<h2 id="CardValidator_Methods">Method List</h2>
+<hr/>
+<p><i>The following is the full list of the methods of the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#CardValidator_m_Config">Config</a></td><td>Sets or retrieves a configuration setting.</td></tr>
+
+<tr valign="top"><td><a href="#CardValidator_m_Reset">Reset</a></td><td>Clears all properties to their default values.</td></tr>
+
+<tr valign="top"><td><a href="#CardValidator_m_ValidateCard">ValidateCard</a></td><td>Checks the card number and expiration date for validity.</td></tr>
+
+</table>
+</div>
+
+<h2 id="CardValidator_Events">Event List</h2>
+<hr/>
+<p><i>The following is the full list of the events fired by the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#CardValidator_e_Error">Error</a></td><td>Information about errors during data delivery.</td></tr>
+
+</table>
+</div>
+
+<h2 id="CardValidator_Configs">Config Settings</h2>
+<hr/>
+<p><i>The following is a list of config settings for the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#NameOnCard">NameOnCard</a></td><td>The name encoded in the track data on the credit card.</td></tr>
+
+<tr valign="top"><td><a href="#BuildInfo">BuildInfo</a></td><td>Information about the product's build.</td></tr>
+
+<tr valign="top"><td><a href="#GUIAvailable">GUIAvailable</a></td><td>Whether or not a message loop is available for processing events.</td></tr>
+
+<tr valign="top"><td><a href="#LicenseInfo">LicenseInfo</a></td><td>Information about the current license.</td></tr>
+
+<tr valign="top"><td><a href="#MaskSensitiveData">MaskSensitiveData</a></td><td>Whether sensitive data is masked in log messages.</td></tr>
+
+<tr valign="top"><td><a href="#UseInternalSecurityAPI">UseInternalSecurityAPI</a></td><td>Whether or not to use the system security libraries or an internal implementation.</td></tr>
+
+</table>
+</div>
+
+<a name="Properties_CardValidator"></a>
+
+
+<h1 id="CardValidator_p_CardExpMonth">CardExpMonth Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Expiration month of the credit card specified in <a href="#CardValidator_p_CardNumber">CardNumber</a> .</p>
+<h2 id="CardValidator_p_CardExpMonth_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_CardExpMonth" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_CardExpMonth" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_CardExpMonth">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">int</a> CardExpMonth <b>{ get; set; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_CardExpMonth">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> CardExpMonth <b>As</b> <a href="javascript:void(0)">Integer</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_CardExpMonth_DefaultValue">Default Value</h2>
+<p>1</p>
+
+<h2 id="CardValidator_p_CardExpMonth_Remarks">Remarks</h2>
+
+<p>This field contains the month portion of the expiration date of the customer's credit card. This 
+property must be in the range 1 - 12. The <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method compares this property against
+the system time to determine if the card is expired.
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+<h1 id="CardValidator_p_CardExpYear">CardExpYear Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Expiration year of the credit card specified in <a href="#CardValidator_p_CardNumber">CardNumber</a> .</p>
+<h2 id="CardValidator_p_CardExpYear_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_CardExpYear" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_CardExpYear" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_CardExpYear">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">int</a> CardExpYear <b>{ get; set; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_CardExpYear">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> CardExpYear <b>As</b> <a href="javascript:void(0)">Integer</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_CardExpYear_DefaultValue">Default Value</h2>
+<p>0</p>
+
+<h2 id="CardValidator_p_CardExpYear_Remarks">Remarks</h2>
+
+<p>This field contains the year portion of the expiration date of the customer's credit card. This 
+property must be in the range 00-99, or 2000-2099. The <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method compares this property against
+the system time to determine if the card is expired.
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+<h1 id="CardValidator_p_CardNumber">CardNumber Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Credit card number to be validated.</p>
+<h2 id="CardValidator_p_CardNumber_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_CardNumber" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_CardNumber" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_CardNumber">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">string</a> CardNumber <b>{ get; set; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_CardNumber">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> CardNumber <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_CardNumber_DefaultValue">Default Value</h2>
+<p>""</p>
+
+<h2 id="CardValidator_p_CardNumber_Remarks">Remarks</h2>
+
+<p>This property contains the customer's credit card number. A credit card number may be of any length, and may optionally include dashes or spaces. However, in practice the maximum length of the supported <a href="#CardValidator_p_CardType">CardType</a>s
+is 19 characters (excluding whitespace), and the minimum length is 13 characters.
+
+
+
+</p>
+
+
+
+
+
+
+
+
+<h1 id="CardValidator_p_CardType">CardType Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Indicates the results of the Luhn Digit Check algorithm.</p>
+<h2 id="CardValidator_p_CardType_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_CardType" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_CardType" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_CardType">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">CardValidatorCardTypes</a> CardType <b>{ get; }</b>
+<br/><b>enum</b> CardValidatorCardTypes <b>{</b>
+  vctUnknown,
+  vctVisa,
+  vctMasterCard,
+  vctAmex,
+  vctDiscover,
+  vctDiners,
+  vctJCB,
+  vctVisaElectron,
+  vctMaestro,
+  vctCUP,
+  vctLaser
+<b>}</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_CardType">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public ReadOnly Property</b> CardType <b>As</b> <a href="javascript:void(0)">CardvalidatorCardTypes</a>
+<br/><b>Enum</b> CardValidatorCardTypes
+  vctUnknown
+  vctVisa
+  vctMasterCard
+  vctAmex
+  vctDiscover
+  vctDiners
+  vctJCB
+  vctVisaElectron
+  vctMaestro
+  vctCUP
+  vctLaser
+<b>End Enum</b>
+</pre></div></div>
+
+<h2 id="CardValidator_p_CardType_DefaultValue">Default Value</h2>
+<p>0</p>
+
+<h2 id="CardValidator_p_CardType_Remarks">Remarks</h2>
+
+<p>This property is filled after a call to the <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method. Allowable values include:</p>
+
+<p><div class='table-responsive'><table class='table'><tr class='d-none'><td /><td /><tr><td class='text-nowrap'>ctUnknown (0)        </td><td class='text-start'>The component could not determine the type of the card based on the <a href="#CardValidator_p_CardNumber">CardNumber</a> prefix and length.</td><tr><td class='text-nowrap'>vctVisa (1)          </td><td class='text-start'>Visa card.</td><tr><td class='text-nowrap'>vctMasterCard (2)    </td><td class='text-start'>MasterCard card.</td><tr><td class='text-nowrap'>vctAmex (3)          </td><td class='text-start'>American Express card.</td><tr><td class='text-nowrap'>vctDiscover (4)      </td><td class='text-start'> Discover Card</td><tr><td class='text-nowrap'>vctDiners (5)        </td><td class='text-start'>Diner's Club card (Carte Blanche or International - the <a href="#CardValidator_p_CardTypeDescription">CardTypeDescription</a> will contain the full name).</td><tr><td class='text-nowrap'>vctJCB (6)           </td><td class='text-start'>Japan Credit Bureau card.</td><tr><td class='text-nowrap'>vctVisaElectron (7)  </td><td class='text-start'>International Visa debit card (not available in US or Canada).</td><tr><td class='text-nowrap'>vctMaestro (8)       </td><td class='text-start'>International debit card (owned and operated by MasterCard). </td><tr><td class='text-nowrap'>vctCUP (9)           </td><td class='text-start'>China UnionPay - China's only credit card organization.</td><tr><td class='text-nowrap'>vctLaser (10)        </td><td class='text-start'>Primary debit card used in Ireland. </td></tr></table></div></p>
+
+<p>
+</p>
+
+
+<p>This property is read-only and not available at design time.</p>
+
+
+
+
+
+
+<h1 id="CardValidator_p_CardTypeDescription">CardTypeDescription Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Human-readable description of the <a href="#CardValidator_p_CardType">CardType</a></p>
+<h2 id="CardValidator_p_CardTypeDescription_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_CardTypeDescription" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_CardTypeDescription" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_CardTypeDescription">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">string</a> CardTypeDescription <b>{ get; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_CardTypeDescription">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public ReadOnly Property</b> CardTypeDescription <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_CardTypeDescription_DefaultValue">Default Value</h2>
+<p>""</p>
+
+<h2 id="CardValidator_p_CardTypeDescription_Remarks">Remarks</h2>
+
+<p>This property is filled after calling the <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method, and will contain a text description of
+the <a href="#CardValidator_p_CardType">CardType</a>. This is useful to distinguish different program cards. For instance, a <a href="#CardValidator_p_CardType">CardType</a>
+of <i>ccDiners</i> might have a corresponding <u>CardTypeDescription</u> of "Diner's Club International", 
+"Diner's Club Carte Blanche", or "Diner's Club enRoute". 
+
+</p>
+
+
+<p>This property is read-only.</p>
+
+
+
+
+
+
+<h1 id="CardValidator_p_DateCheckPassed">DateCheckPassed Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Indicates whether the card is expired or not.</p>
+<h2 id="CardValidator_p_DateCheckPassed_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_DateCheckPassed" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_DateCheckPassed" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_DateCheckPassed">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">bool</a> DateCheckPassed <b>{ get; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_DateCheckPassed">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public ReadOnly Property</b> DateCheckPassed <b>As</b> <a href="javascript:void(0)">Boolean</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_DateCheckPassed_DefaultValue">Default Value</h2>
+<p>False</p>
+
+<h2 id="CardValidator_p_DateCheckPassed_Remarks">Remarks</h2>
+
+<p>The <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method checks whether the card's expiration date (<a href="#CardValidator_p_CardExpMonth">CardExpMonth</a> and <a href="#CardValidator_p_CardExpYear">CardExpYear</a>) 
+is a valid future date, and stores that result in the <u>DateCheckPassed</u> property.
+</p>
+
+
+<p>This property is read-only.</p>
+
+
+
+
+
+
+<h1 id="CardValidator_p_DigitCheckPassed">DigitCheckPassed Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Indicates the results of the Luhn Digit Check algorithm.</p>
+<h2 id="CardValidator_p_DigitCheckPassed_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_DigitCheckPassed" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_DigitCheckPassed" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_DigitCheckPassed">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">bool</a> DigitCheckPassed <b>{ get; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_DigitCheckPassed">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public ReadOnly Property</b> DigitCheckPassed <b>As</b> <a href="javascript:void(0)">Boolean</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_DigitCheckPassed_DefaultValue">Default Value</h2>
+<p>False</p>
+
+<h2 id="CardValidator_p_DigitCheckPassed_Remarks">Remarks</h2>
+
+<p>The <a href="#CardValidator_m_ValidateCard">ValidateCard</a> method checks whether or not the <a href="#CardValidator_p_CardNumber">CardNumber</a> conforms to the mod-10 digit check algorithm,
+and stores that result in the <u>DigitCheckPassed</u> property. Note that a card may pass this check and still be an
+invalid card.  (Either a fake number that passes the digit check, or an unknown <a href="#CardValidator_p_CardType">CardType</a>).
+
+</p>
+
+
+<p>This property is read-only.</p>
+
+
+
+
+
+
+<h1 id="CardValidator_p_TrackData">TrackData Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Magnetic stripe data read off the credit card.</p>
+<h2 id="CardValidator_p_TrackData_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_TrackData" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_TrackData" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_TrackData">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">string</a> TrackData <b>{ get; set; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_TrackData">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> TrackData <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="CardValidator_p_TrackData_DefaultValue">Default Value</h2>
+<p>""</p>
+
+<h2 id="CardValidator_p_TrackData_Remarks">Remarks</h2>
+
+<p>This property may be set with the magnetic stripe read off the back of a credit card using any commercially 
+available card reader. You may set this property with either Track1 or Track2 data. If <u>TrackData</u> is set, 
+the values contained in <a href="#CardValidator_p_CardNumber">CardNumber</a>, <a href="#CardValidator_p_CardExpMonth">CardExpMonth</a>, and <a href="#CardValidator_p_CardExpYear">CardExpYear</a> are ignored when calling 
+<a href="#CardValidator_m_ValidateCard">ValidateCard</a>. Instead, these properties are parsed out of the track data. This allows you to easily retrieve 
+the expiration date and card number from either Track1 or Track2 data. For instance:</p>
+
+<p><code>CardValidator1.TrackData = "4012000033330026=21121015432112345678"
+CardValidator1.ValidateCard()</code></p>
+
+<p>The <a href="#CardValidator_p_CardNumber">CardNumber</a>, <a href="#CardValidator_p_CardExpMonth">CardExpMonth</a>, and <a href="#CardValidator_p_CardExpYear">CardExpYear</a> will now contain the values parsed from the 
+track data. <a href="#CardValidator_p_TrackType">TrackType</a> will also indicate whether the <u>TrackData</u> is Track1 or Track2 (in this 
+case, it's Track2 data).
+
+
+</p>
+
+
+
+
+
+
+
+
+<h1 id="CardValidator_p_TrackType">TrackType Property (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Indicates the type of the specified <a href="#CardValidator_p_TrackData">TrackData</a> .</p>
+<h2 id="CardValidator_p_TrackType_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_p_TrackType" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_p_TrackType" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_p_TrackType">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="javascript:void(0)">CardValidatorTrackTypes</a> TrackType <b>{ get; }</b>
+<br/><b>enum</b> CardValidatorTrackTypes <b>{</b>
+  ttUnknown,
+  ttTrack1,
+  ttTrack2
+<b>}</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_p_TrackType">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public ReadOnly Property</b> TrackType <b>As</b> <a href="javascript:void(0)">CardvalidatorTrackTypes</a>
+<br/><b>Enum</b> CardValidatorTrackTypes
+  ttUnknown
+  ttTrack1
+  ttTrack2
+<b>End Enum</b>
+</pre></div></div>
+
+<h2 id="CardValidator_p_TrackType_DefaultValue">Default Value</h2>
+<p>0</p>
+
+<h2 id="CardValidator_p_TrackType_Remarks">Remarks</h2>
+
+<p>This property will be filled after a call to <a href="#CardValidator_m_ValidateCard">ValidateCard</a>. If magnetic stripe data was supplied 
+in the <a href="#CardValidator_p_TrackData">TrackData</a> field, this property will indicate which type of track was entered. If no track 
+data was entered (ie, the <a href="#CardValidator_p_CardNumber">CardNumber</a> was specified instead) then the <u>TrackType</u> will be 
+<i>ttUnknown</i>.
+
+
+</p>
+
+
+<p>This property is read-only and not available at design time.</p>
+
+
+
+
+
+
+<a name="Methods_CardValidator"></a>
+
+<h1 id="CardValidator_m_Config">Config Method (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Sets or retrieves a configuration setting.</p>
+
+<h2 id="CardValidator_m_Config_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_m_Config" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_m_Config" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_m_Config">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">string</a> <b>Config(</b><a href="javascript:void(0)">string</a> <i>configurationString</i><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_m_Config">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Function Config(</b><b>ByVal</b> <i>ConfigurationString</i> <b>As</b> <a href="javascript:void(0)">String</a><b>)</b> <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="CardValidator_m_Config_Remarks">Remarks</h2>
+
+<p><u>Config</u> is a generic method available in every component.
+It is used to set and retrieve <a href="#CardValidatorConfig">configuration settings</a> for the
+component.</p>
+
+<p>These settings are similar in functionality to properties,
+but they are rarely used.  In order to avoid "polluting" the property
+namespace of the component, access to these <i>internal properties</i>
+is provided through the <u>Config</u> method.</p>
+
+<p>To set a configuration setting named <i>PROPERTY</i>, you must call
+<i>Config("PROPERTY=VALUE")</i>, where <i>VALUE</i> is the
+value  of the setting expressed as a string.  For boolean values,
+use the strings "True", "False", "0", "1", "Yes", or "No" (case does
+not matter).</p>
+
+<p>To read (query) the value of a <a href="#CardValidatorConfig">configuration setting</a>, you must call
+<i>Config("PROPERTY")</i>.  The value will be returned as a string.
+
+
+</p>
+
+
+
+
+<h1 id="CardValidator_m_Reset">Reset Method (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Clears all properties to their default values.</p>
+
+<h2 id="CardValidator_m_Reset_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_m_Reset" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_m_Reset" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_m_Reset">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">void</a> <b>Reset(</b><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_m_Reset">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Sub Reset(</b><b>)</b>
+</pre></div></div>
+
+<h2 id="CardValidator_m_Reset_Remarks">Remarks</h2>
+
+<p>This method clears all properties to their default values.
+</p>
+
+
+
+
+<h1 id="CardValidator_m_ValidateCard">ValidateCard Method (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Checks the card number and expiration date for validity.</p>
+
+<h2 id="CardValidator_m_ValidateCard_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_m_ValidateCard" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_m_ValidateCard" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_m_ValidateCard">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">void</a> <b>ValidateCard(</b><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_m_ValidateCard">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Sub ValidateCard(</b><b>)</b>
+</pre></div></div>
+
+<h2 id="CardValidator_m_ValidateCard_Remarks">Remarks</h2>
+
+<p>This method performs several checks on customer information to determine if the card information 
+submitted <i>could be</i> valid. This should be done before submitting an actual transaction for 
+authorization. The tests performed are listed below:</p>
+
+<p><div class='table-responsive'><table class='table'><tr class='d-none'><td /><td /><tr><td class='text-nowrap'>Luhn Digit Check</td><td class='text-start'>This process checks the digits of the <a href="#CardValidator_p_CardNumber">CardNumber</a> to make sure that it <i>could be</i> a 
+valid card number. The mathematical algorithm used to determine validity is outlined in the Visa 
+External Interface Specification: Authorization Record Formats Version 5.8, page 63.</td><tr><td class='text-nowrap'>Card Type Check</td><td class='text-start'>This process checks the length and the beginning digits of the <a href="#CardValidator_p_CardNumber">CardNumber</a> to determine if it is a valid 
+card type. The results of this check is stored are the <a href="#CardValidator_p_CardType">CardType</a> and <a href="#CardValidator_p_CardTypeDescription">CardTypeDescription</a> properties.</td><tr><td class='text-nowrap'>Expiration Date Check</td><td class='text-start'>The date given in <a href="#CardValidator_p_CardExpMonth">CardExpMonth</a> and <a href="#CardValidator_p_CardExpYear">CardExpYear</a> is compared to the current system date 
+to make sure that the card is still valid. </td></tr></table></div>
+
+
+
+
+
+
+
+</p>
+
+
+
+
+<a name="Events_CardValidator"></a>
+
+<h1 id="CardValidator_e_Error">Error Event (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+<p>Information about errors during data delivery.</p>
+
+<h2 id="CardValidator_e_Error_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-CardValidator_e_Error" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-CardValidator_e_Error" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-CardValidator_e_Error">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public event <a href="javascript:void(0)">OnErrorHandler</a> <i>OnError</i>;</b>
+
+<b>public delegate</b> <a href="javascript:void(0)">void</a> <b><a href="javascript:void(0)">OnErrorHandler</a>(</b><a href="javascript:void(0)">object</a> <i>sender</i>, <a href="javascript:void(0)">CardValidatorErrorEventArgs</a> <i>e</i><b>);</b>
+
+<b>public class</b> <a href="javascript:void(0)">CardValidatorErrorEventArgs</a> : <a href="javascript:void(0)">EventArgs</a> <b>{</b>
+  <b>public</b> <a href="javascript:void(0)">int</a> ErrorCode { <b>get;</b> }
+  <b>public</b> <a href="javascript:void(0)">string</a> Description { <b>get;</b> }
+<b>}</b>
+</pre></div>
+<div class="tab-pane" id="vb-CardValidator_e_Error">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Event <i>OnError</i> As <a href="javascript:void(0)">OnErrorHandler</a></b>
+
+<b>Public Delegate Sub <a href="javascript:void(0)">OnErrorHandler</a>(</b><i>sender</i> <b>As</b> <a href="javascript:void(0)">Object</a>, <i>e</i> <b>As</b> <a href="javascript:void(0)">CardValidatorErrorEventArgs</a><b>)</b>
+
+<b>Public Class</b> <a href="javascript:void(0)">CardValidatorErrorEventArgs</a> <b>Inherits</b> <a href="javascript:void(0)">EventArgs</a>
+  <b>Public ReadOnly Property</b> ErrorCode <b>As</b> <a href="javascript:void(0)">Integer</a>
+  <b>Public ReadOnly Property</b> Description <b>As</b> <a href="javascript:void(0)">String</a>
+<b>End Class</b>
+</pre></div></div>
+
+<h2 id="CardValidator_e_Error_Remarks">Remarks</h2>
+
+<p>The <u>Error</u> event is fired in case of exceptional conditions
+during message processing.</p>
+
+<p><i>ErrorCode</i> contains an error code and <i>Description</i> contains
+a textual description of the error.  For a list of valid error
+codes and their descriptions, please refer to the <a href="#CardValidatorErrors">Error Codes</a>
+section. 
+
+</p>
+
+
+
+<a name="Types_CardValidator"></a>
+
+
+<h1 id="CardValidatorConfig">Config Settings (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+
+The component accepts one or more of the following <i>configuration settings</i>.
+Configuration settings are similar in functionality to properties,
+but they are rarely used.  In order to avoid "polluting" the property
+namespace of the component, access to these <i>internal properties</i>
+is provided through the <a href="#CardValidator_m_Config">Config</a> method.
+
+<p></p>
+
+<h3 id="config_settings_cardvalidator">CardValidator Config Settings</h3>
+<div class="w-100 ps-2">
+<a name="NameOnCard" class="main-color fw-bold">NameOnCard</a>: &#160; 
+The name encoded in the track data on the credit card.<p /><p />If the <a href="#CardValidator_p_TrackData">TrackData</a> you're parsing is Track1 data, it contains the customer's name, and should be identical
+to the name printed on the face of the card. Track2 data does not contain this name. This field will be filled
+after a call to <a href="#CardValidator_m_ValidateCard">ValidateCard</a>. 
+
+
+</div><span></span>
+<h3 id="config_settings_base">Base Config Settings</h3>
+<div class="w-100 ps-2">
+<a name="BuildInfo" class="main-color fw-bold">BuildInfo</a>: &#160; 
+Information about the product's build.<p /><p />When queried, this setting will return a string containing information about the product's build.
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="GUIAvailable" class="main-color fw-bold">GUIAvailable</a>: &#160; 
+Whether or not a message loop is available for processing events.<p /><p />In a GUI-based application, long-running blocking operations may cause the application to stop responding to input until the operation returns. The component will attempt to discover whether or not the application has a message loop and, if one is discovered, it will process events in that message loop during any such blocking operation.
+
+<p>In some non-GUI applications, an invalid message loop may be discovered that will result in errant behavior. In these cases, setting <a href="#GUIAvailable">GUIAvailable</a> to <var>false</var> will ensure that the component does not attempt to process external events.
+</p>
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="LicenseInfo" class="main-color fw-bold">LicenseInfo</a>: &#160; 
+Information about the current license.<p /><p />When queried, this setting will return a string containing information about the license this instance of a component is using. It will return the following information:
+<ul><li>Product: The product the license is for.</li><li>Product Key: The key the license was generated from.</li><li>License Source: Where the license was found (e.g., RuntimeLicense, License File).</li><li>License Type: The type of license installed (e.g., Royalty Free, Single Server).</li><li>Last Valid Build: The last valid build number for which the license will work.</li></ul>
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="MaskSensitiveData" class="main-color fw-bold">MaskSensitiveData</a>: &#160; 
+Whether sensitive data is masked in log messages.<p /><p />In certain circumstances it may be beneficial to mask sensitive data, like passwords, in log messages. Set this to <var>true</var> to mask sensitive data. The default is <var>true</var>.
+
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="UseInternalSecurityAPI" class="main-color fw-bold">UseInternalSecurityAPI</a>: &#160; 
+Whether or not to use the system security libraries or an internal implementation.<p /><p />
+When set to <var>false</var>, the component will use the system security libraries by default to perform cryptographic functions where applicable.
+
+In this case, calls to unmanaged code will be made. In certain environments, this is not desirable. 
+To use a completely managed security implementation, set this setting to <var>true</var>.
+
+<p>Setting this configuration setting to <var>true</var> tells the component to use the internal implementation instead of using the system security libraries.</p>
+
+<p>
+On Windows, this setting is set to <var>false</var> by default. On Linux/macOS, this setting is set to <var>true</var> by default.</p>
+
+<p>NOTE: This setting is static. The value set is applicable to all components used in the application.</p>
+
+<p>When this value is set, the product's system dynamic link library (DLL) is no longer required as a reference, as all unmanaged code is 
+stored in that file.
+
+
+
+
+</p>
+
+
+</div><span></span>
+
+
+<h1 id="CardValidatorErrors">Trappable Errors (<a href="#CardValidator">CardValidator</a> Component)</h1>
+
+
+<h3>CardValidator Errors</h3><div class='table-responsive p-1'><table class='table table-bordered'><tr><tr><td class='text-nowrap'>504&#160;&#160;&#160;</td><td>Luhn digit check failed.</td><tr><td class='text-nowrap'>505&#160;&#160;&#160;</td><td>Card date invalid.</td><tr><td class='text-nowrap'>506&#160;&#160;&#160;</td><td>Card expired.</td><tr><td class='text-nowrap'>703&#160;&#160;&#160;</td><td>Invalid CardNumber format (contains letters or unknown characters).</td><tr><td class='text-nowrap'>704&#160;&#160;&#160;</td><td>Could not determine the Credit Card type.</td><tr><td class='text-nowrap'>705&#160;&#160;&#160;</td><td>Error parsing <a href="#CardValidator_p_TrackData">TrackData</a>. Format cannot be determined.
+</td></tr></table></div>
+
+
+
+		</div>
+	</main>
+</div>
+
+<footer class="help-footer py-2 bg-light sticky-bottom shadow-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="fs-13px text-center">
+					Copyright (c) 2026 4D Payments Inc. - E-Payment Integrator 2024  .NET Edition  [Build 9622]
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script defer src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script defer src="../lib/jquery/js/jquery.min.js" type="text/javascript"></script>
+<script defer src="../lib/highlight/highlight.min.js" type="text/javascript"></script>
+<script defer src="../lib/help.js?v=9622" type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+  "DPayments": {
+    "Ofx": {
+      "FiUrl": "https://your-bank-ofx-url",
+      "FiOrganization": "YOUR_FI_ORG",
+      "FiId": "YOUR_FI_ID",
+      "OfxUser": "your-user",
+      "OfxPassword": "your-password"
+    },
+    "Gateway": {
+      "Url": "https://your-gateway-endpoint",
+      "MerchantId": "YOUR_MERCHANT_ID",
+      "ApiKey": "YOUR_API_KEY"
+    }
+  }
+}

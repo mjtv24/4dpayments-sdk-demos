@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>E-Payment Integrator 2024 .NET Edition Reference</title>
+	<meta name="description" 	content="Retail Demo .NET Edition Reference" />
+	<meta name="author" 		content="www.4dpayments.com"> 
+	<meta name="generator" 		content="Retail Demo (E-Payment Integrator 2024 .NET Edition [DPNJA Build 9622]);">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/default.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/main.css?v=9622" />
+  <link rel="stylesheet" type="text/css" href="../lib/icons.css?v=9622" />
+  <link rel="canonical" href="https://cdn.4dpayments.com/help/DPJ/cs" />
+  	  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WXV8L54S"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-WXV8L54S');</script>
+  <style>:root{--main-color:#307e4a}</style>
+</head>
+
+<body class="bg-light-subtle">
+  <header class="navbar navbar-expand-lg help-navbar sticky-top bg-white shadow-sm">
+    <nav class="container-fluid container-fluid pe-lg-5 ps-lg-4 py-1 ms-2">
+      <div class="d-flex align-items-center justify-content-md-between w-100">
+        <div class="help-navbar-toggle d-lg-none me-2">
+          <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+            <svg version="1.1" id="Layer_1" height="18" width="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.6 16" style="enable-background:new 0 0 25.6 16;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#444444;}
+              </style>
+              <rect x="-0.2" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="7" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="13.9" class="st0" width="25.8" height="2.1"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="d-flex">
+          <a class="p-0 me-0 me-lg-2" href="https://www.4dpayments.com/">
+	
+			<img src="help_logo.svg" height="25px" class="logo logo-company"/>		
+			
+          </a>
+          <div class="dropdown">
+            <a href="default.htm" class="d-none d-md-flex common-title" id="help-editions-toggle">
+              E-Payment Integrator 2024 .NET Edition
+              <span class="ms-1 d-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg>
+              </span>
+            </a>
+            <div id="help-editions" class="dropdown-menu">
+                              
+                <li class="dropdown-item"><a href="../acx/default.htm">E-Payment Integrator 2024 ActiveX Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../java/default.htm">E-Payment Integrator 2024 Android Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../bcb/default.htm">E-Payment Integrator 2024 C++ Builder Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cpp/default.htm">E-Payment Integrator 2024 C++ Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cs/default.htm">E-Payment Integrator 2024 .NET Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../dlp/default.htm">E-Payment Integrator 2024 Delphi Edition</a></li>
+                                  
+                                
+                <li class="dropdown-item"><a href="../mac/default.htm">E-Payment Integrator 2024 macOS Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../php/default.htm">E-Payment Integrator 2024 PHP Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../py/default.htm">E-Payment Integrator 2024 Python Edition</a></li>
+                                  
+                            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 fs-13px d-none d-md-block">Version 24.0  [Build 9622]</div>
+      </div>
+    </nav>
+  </header>
+
+    
+  <div class="help-layout container-fluid wide g-0">
+    <aside class="help-sidebar">
+      <nav class="offcanvas-lg offcanvas-start" id="menuSidebar" tabindex="-1">
+        <button class="navbar-toggler p-3 pe-4 border-0 d-flex d-lg-none justify-content-end mt-2 mr-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+          <svg version="1.1" id="Layer_1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 19.9 19.9" style="enable-background:new 0 0 19.9 19.9;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#444444;}
+            </style>
+            <rect x="-3.1" y="8.9" transform="matrix(0.7071 0.7071 -0.7071 0.7071 9.9235 -4.05)" class="st0" width="25.8" height="2.1"/>
+            <rect x="-2.9" y="8.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 24.0561 9.9432)" class="st0" width="25.8" height="2.1"/>
+          </svg>
+        </button>
+
+        <div id="toc-search" class="dropdown toc-search mt-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+          </svg>
+          <input class="w-100" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" />
+          <div class="dropdown-menu w-100">
+          </div>
+        </div>
+
+        <div id="sidebarMenu" class="sidebar-menu h-100">
+
+
+<!--  BEGIN TOC CONTENT -->
+<UL>
+  <LI>
+  <a href="default.htm">E-Payment Integrator 2024 .NET Edition</a>
+
+  <UL>
+
+
+  <LI> 
+    <a href="default.htm">Introduction</a>
+
+ 
+ 
+
+  <LI> 
+    <a href="samples.htm">Sample Projects</a>
+ 
+
+  <LI> 
+    <a href="licensing.htm#licensing">Licensing Instructions</a>
+    
+
+    
+
+
+  
+    <LI>
+      <a href="pages.htm#pg_icbasiccardinfo" data-bs-toggle="collapse" data-bs-target="#m_pg_icbasiccardinfo">Basic Credit Card Information</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_respcodes" data-bs-toggle="collapse" data-bs-target="#m_pg_respcodes">Gateway Response Codes</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_icgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_icgatewaysetup">ICharge Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_ecgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_ecgatewaysetup">ECheck Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_recgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_recgatewaysetup">RecurringBilling Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_testinginfo" data-bs-toggle="collapse" data-bs-target="#m_pg_testinginfo">Testing Information</a>
+      
+
+
+
+
+  <LI>
+    <a data-bs-toggle="collapse" data-bs-target="#ComponentACHConverter" aria-expanded="true"><span class="ci"></span>Component Reference</a>
+    <UL class="collapse show" id="ComponentACHConverter">
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageACHConverter"></span><a href="ACHConverter.htm#ACHConverter">ACHConverter Component</a>
+  <UL class="collapse" id="pageACHConverter">
+    <LI> 
+      <a href="ACHConverter.htm#ACHConverter">Introduction</a>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#Properties_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ACHConverter"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ACHConverter">
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBatchCount">FileBatchCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBlockCount">FileBlockCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileCreditTotal">FileCreditTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileDebitTotal">FileDebitTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryCount">FileEntryCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryHash">FileEntryHash</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputFile">InputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputString">InputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputFile">OutputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputString">OutputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_Schema">Schema</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_VerifyMode">VerifyMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ACHConverter.htm#Methods_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ACHConverter"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertACH">ConvertACH</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertXML">ConvertXML</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetInputStream">SetInputStream</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetOutputStream">SetOutputStream</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ACHConverter.htm#Events_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Events_ci_ACHConverter"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCardValidator"></span><a href="CardValidator.htm#CardValidator">CardValidator Component</a>
+  <UL class="collapse" id="pageCardValidator">
+    <LI> 
+      <a href="CardValidator.htm#CardValidator">Introduction</a>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#Properties_CardValidator" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CardValidator"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CardValidator">
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpMonth">CardExpMonth</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpYear">CardExpYear</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardNumber">CardNumber</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardType">CardType</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardTypeDescription">CardTypeDescription</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DateCheckPassed">DateCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DigitCheckPassed">DigitCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackData">TrackData</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackType">TrackType</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CardValidator.htm#Methods_CardValidator" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CardValidator"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_ValidateCard">ValidateCard</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CardValidator.htm#Events_CardValidator" data-bs-toggle="collapse" data-bs-target="#Events_ci_CardValidator"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCertMgr"></span><a href="CertMgr.htm#CertMgr">CertMgr Component</a>
+  <UL class="collapse" id="pageCertMgr">
+    <LI> 
+      <a href="CertMgr.htm#CertMgr">Introduction</a>
+
+
+
+    <LI>
+      <a href="CertMgr.htm#Properties_CertMgr" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CertMgr"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CertMgr">
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_Cert">Cert</a>
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertExtensions">CertExtensions (Collection)</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStore">CertStore</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStorePassword">CertStorePassword</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStoreType">CertStoreType</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportedCert">ExportedCert</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportFormat">ExportFormat</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportPrivateKey">ExportPrivateKey</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Methods_CertMgr" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CertMgr"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckCRL">CheckCRL</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckOCSP">CheckOCSP</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateCertificate">CreateCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateKey">CreateKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteCertificate">DeleteCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteKey">DeleteKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ExportCertificate">ExportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_GenerateCSR">GenerateCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportCertificate">ImportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportSignedCSR">ImportSignedCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_IssueCertificate">IssueCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListCertificateStores">ListCertificateStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListKeys">ListKeys</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListMachineStores">ListMachineStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListStoreCertificates">ListStoreCertificates</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCertificate">ReadCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCSR">ReadCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SaveCertificate">SaveCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ShowCertificateChain">ShowCertificateChain</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SignCSR">SignCSR</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#Events_CertMgr" data-bs-toggle="collapse" data-bs-target="#Events_ci_CertMgr"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertChain">CertChain</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertList">CertList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_KeyList">KeyList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_StoreList">StoreList</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Types_CertMgr" data-bs-toggle="collapse" data-bs-target="#Types_ci_CertMgr"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_CertMgr">
+      <LI>
+        <a href="CertMgr.htm#Type_CertExtension">CertExtension</a>        
+
+      <LI>
+        <a href="CertMgr.htm#Type_Certificate">Certificate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCheck21"></span><a href="Check21.htm#Check21">Check21 Component</a>
+  <UL class="collapse" id="pageCheck21">
+    <LI> 
+      <a href="Check21.htm#Check21">Introduction</a>
+
+
+
+    <LI>
+      <a href="Check21.htm#Properties_Check21" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Check21"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Check21">
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_BusinessDate">BusinessDate</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CashLetterId">CashLetterId</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Checks">Checks (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CollectionType">CollectionType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CycleNumber">CycleNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationName">DestinationName</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationRoutingNumber">DestinationRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DocumentationType">DocumentationType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileData">FileData</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileName">FileName</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_FTP">FTP</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Origin">Origin</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_RecordType">RecordType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_ReturnRoutingNumber">ReturnRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SettlementDate">SettlementDate</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLStartMode">SSLStartMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Methods_Check21" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Check21"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildAndUploadFile">BuildAndUploadFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildFile">BuildFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Reset">Reset</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Events_Check21" data-bs-toggle="collapse" data-bs-target="#Events_ci_Check21"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Status">Status</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Types_Check21" data-bs-toggle="collapse" data-bs-target="#Types_ci_Check21"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Check21">
+      <LI>
+        <a href="Check21.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_CheckDetail">CheckDetail</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_FTPSettings">FTPSettings</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_Origin">Origin</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Check21Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Check21.htm#Check21Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageDirectPayment"></span><a href="DirectPayment.htm#DirectPayment">DirectPayment Component</a>
+  <UL class="collapse" id="pageDirectPayment">
+    <LI> 
+      <a href="DirectPayment.htm#DirectPayment">Introduction</a>
+
+
+
+    <LI>
+      <a href="DirectPayment.htm#Properties_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Properties_ci_DirectPayment"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_DirectPayment">
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Authorization">Authorization</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ItemTotal">ItemTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_MerchantSessionId">MerchantSessionId</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payer">Payer</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payment">Payment</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Response">Response</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Methods_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Methods_ci_DirectPayment"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#Events_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Events_ci_DirectPayment"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Types_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Types_ci_DirectPayment"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_DirectPayment">
+      <LI>
+        <a href="DirectPayment.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_DirectPaymentPayer">DirectPaymentPayer</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalCard">PayPalCard</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalResponse">PayPalResponse</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageECheck"></span><a href="ECheck.htm#ECheck">ECheck Component</a>
+  <UL class="collapse" id="pageECheck">
+    <LI> 
+      <a href="ECheck.htm#ECheck">Introduction</a>
+
+
+
+    <LI>
+      <a href="ECheck.htm#Properties_ECheck" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ECheck"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ECheck">
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Bank">Bank</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CheckNumber">CheckNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CompanyName">CompanyName</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseDOB">LicenseDOB</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseNumber">LicenseNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseState">LicenseState</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantPassword">MerchantPassword</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_PaymentType">PaymentType</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TaxId">TaxId</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Methods_ECheck" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ECheck"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#Events_ECheck" data-bs-toggle="collapse" data-bs-target="#Events_ci_ECheck"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Types_ECheck" data-bs-toggle="collapse" data-bs-target="#Types_ci_ECheck"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ECheck">
+      <LI>
+        <a href="ECheck.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#ECheckConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ECheck.htm#ECheckErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageExpressCheckout"></span><a href="ExpressCheckout.htm#ExpressCheckout">ExpressCheckout Component</a>
+  <UL class="collapse" id="pageExpressCheckout">
+    <LI> 
+      <a href="ExpressCheckout.htm#ExpressCheckout">Introduction</a>
+
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Properties_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ExpressCheckout"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ExpressCheckout">
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Authorization">Authorization</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_BuyerEmail">BuyerEmail</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_CancelURL">CancelURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ContactPhone">ContactPhone</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payer">Payer</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PayerId">PayerId</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payment">Payment</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PaymentAction">PaymentAction</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ResponseToken">ResponseToken</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Token">Token</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Methods_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ExpressCheckout"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_CheckoutPayment">CheckoutPayment</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetCheckoutDetails">GetCheckoutDetails</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_SetCheckout">SetCheckout</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#Events_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Events_ci_ExpressCheckout"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Types_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Types_ci_ExpressCheckout"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ExpressCheckout">
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_ExpressCheckoutPayer">ExpressCheckoutPayer</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageICharge"></span><a href="ICharge.htm#ICharge">ICharge Component</a>
+  <UL class="collapse" id="pageICharge">
+    <LI> 
+      <a href="ICharge.htm#ICharge">Introduction</a>
+
+
+
+    <LI>
+      <a href="ICharge.htm#Properties_ICharge" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ICharge"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ICharge">
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Methods_ICharge" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ICharge"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#Events_ICharge" data-bs-toggle="collapse" data-bs-target="#Events_ci_ICharge"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Types_ICharge" data-bs-toggle="collapse" data-bs-target="#Types_ci_ICharge"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ICharge">
+      <LI>
+        <a href="ICharge.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCard">EPCard</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#IChargeConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ICharge.htm#IChargeErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel2"></span><a href="Level2.htm#Level2">Level2 Component</a>
+  <UL class="collapse" id="pageLevel2">
+    <LI> 
+      <a href="Level2.htm#Level2">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level2.htm#Properties_Level2" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level2"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level2">
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_DutyAmount">DutyAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_FreightAmount">FreightAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_PONumber">PONumber</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipFromZip">ShipFromZip</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipToZip">ShipToZip</a>
+
+
+      
+      <LI>
+        <a href="Level2.htm#Level2_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxAmount">TaxAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxExempt">TaxExempt</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Methods_Level2" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level2"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Events_Level2" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level2"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Types_Level2" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level2"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level2">
+      <LI>
+        <a href="Level2.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Level2Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level2.htm#Level2Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel3"></span><a href="Level3.htm#Level3">Level3 Component</a>
+  <UL class="collapse" id="pageLevel3">
+    <LI> 
+      <a href="Level3.htm#Level3">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level3.htm#Properties_Level3" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level3"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level3">
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_LineItems">LineItems (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Methods_Level3" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level3"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Events_Level3" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level3"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Types_Level3" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level3"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level3">
+      <LI>
+        <a href="Level3.htm#Type_EPLineItem">EPLineItem</a>        
+
+      <LI>
+        <a href="Level3.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Level3Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level3.htm#Level3Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageOAuth"></span><a href="OAuth.htm#OAuth">OAuth Component</a>
+  <UL class="collapse" id="pageOAuth">
+    <LI> 
+      <a href="OAuth.htm#OAuth">Introduction</a>
+
+
+
+    <LI>
+      <a href="OAuth.htm#Properties_OAuth" data-bs-toggle="collapse" data-bs-target="#Properties_ci_OAuth"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_OAuth">
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessToken">AccessToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessTokenExp">AccessTokenExp</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationCode">AuthorizationCode</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationScope">AuthorizationScope</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientId">ClientId</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientProfile">ClientProfile</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientSecret">ClientSecret</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Connected">Connected</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Cookies">Cookies (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_FollowRedirects">FollowRedirects</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_GrantType">GrantType</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_LocalHost">LocalHost</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_OtherHeaders">OtherHeaders</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Params">Params (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_RefreshToken">RefreshToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerAuthURL">ServerAuthURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerTokenURL">ServerTokenURL</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredData">TransferredData</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredHeaders">TransferredHeaders</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_UsePKCE">UsePKCE</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerPort">WebServerPort</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLCert">WebServerSSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLEnabled">WebServerSSLEnabled</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Methods_OAuth" data-bs-toggle="collapse" data-bs-target="#Methods_ci_OAuth"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddCookie">AddCookie</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddParam">AddParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorization">GetAuthorization</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorizationURL">GetAuthorizationURL</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetParam">GetParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StartWebServer">StartWebServer</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StopWebServer">StopWebServer</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#Events_OAuth" data-bs-toggle="collapse" data-bs-target="#Events_ci_OAuth"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Connected">Connected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ConnectionStatus">ConnectionStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Disconnected">Disconnected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_EndTransfer">EndTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Header">Header</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_LaunchBrowser">LaunchBrowser</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Redirect">Redirect</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ReturnURL">ReturnURL</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SetCookie">SetCookie</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_StartTransfer">StartTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Status">Status</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Transfer">Transfer</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Types_OAuth" data-bs-toggle="collapse" data-bs-target="#Types_ci_OAuth"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_OAuth">
+      <LI>
+        <a href="OAuth.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_HTTPCookie">HTTPCookie</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_OAuthParam">OAuthParam</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#OAuthConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="OAuth.htm#OAuthErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRecurringBilling"></span><a href="RecurringBilling.htm#RecurringBilling">RecurringBilling Component</a>
+  <UL class="collapse" id="pageRecurringBilling">
+    <LI> 
+      <a href="RecurringBilling.htm#RecurringBilling">Introduction</a>
+
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Properties_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Properties_ci_RecurringBilling"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_RecurringBilling">
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Customer">Customer</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckBank">ECheckBank</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckPaymentType">ECheckPaymentType</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_PaymentSchedule">PaymentSchedule</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDesc">SubscriptionDesc</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDetails">SubscriptionDetails</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionName">SubscriptionName</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Methods_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Methods_ci_RecurringBilling"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CancelSubscription">CancelSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CreateSubscription">CreateSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetSubscriptionStatus">GetSubscriptionStatus</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_UpdateSubscription">UpdateSubscription</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#Events_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Events_ci_RecurringBilling"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Types_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Types_ci_RecurringBilling"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_RecurringBilling">
+      <LI>
+        <a href="RecurringBilling.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPPaymentSchedule">EPPaymentSchedule</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPRecurringResponse">EPRecurringResponse</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSubscriptionDetails">EPSubscriptionDetails</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRetail"></span><a href="Retail.htm#Retail">Retail Component</a>
+  <UL class="collapse" id="pageRetail">
+    <LI> 
+      <a href="Retail.htm#Retail">Introduction</a>
+
+
+
+    <LI>
+      <a href="Retail.htm#Properties_Retail" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Retail"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Retail">
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Methods_Retail" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Retail"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#Events_Retail" data-bs-toggle="collapse" data-bs-target="#Events_ci_Retail"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Types_Retail" data-bs-toggle="collapse" data-bs-target="#Types_ci_Retail"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Retail">
+      <LI>
+        <a href="Retail.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#RetailConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="Retail.htm#RetailErrors">Error Codes</a>
+
+
+  </UL>
+    </UL>
+
+
+  <LI>
+    <a href="License.htm#license">Software License</a>
+
+</UL>
+<!-- END TOC CONTENT -->
+        </div>
+      </nav>
+    </aside>
+
+    <main class="help-main bg-body shadow-sm px-4 px-lg-0 ps-lg-4">
+      <div class="help-toc d-none d-lg-block">
+        <nav id="helpToc" class="ps-3 pb-4 mb-4">
+        </nav>
+      </div>
+      <div class="help-content pt-3" id="helpContent">
+
+
+<h1 id="licensing">Licensing Instructions</h1>
+<h2 style="color:black">Limited Distribution Licensing</h2>
+<p>
+The .NET components may be licensed for distribution using either Microsoft's .NET Licensing scheme or by assigning a Runtime License value to the component instances.
+<p>
+<b>Using Microsoft's .NET Licensing Scheme</b>
+<p>
+This scheme is applicable to projects targeting .NET Framework (Windows Forms, Console Applications, etc). 
+In Microsoft's .NET Licensing scheme, Visual Studio automatically creates a file named "licenses.licx" whenever you drop a licensed component on the form. The "licenses.licx" file is automatically added to your project as an embedded resource. When you build the project, this licenses.licx file will be used to embed license information into the compiled assembly (in ASP.NET 2.0, the license information will be embedded into a separate App_Licenses.dll by default).
+<p>
+If you are not using a form or you are creating the components dynamically, the easiest way to generate the licx file is to use a separate project, drop a component on a form, and copy the licenses.licx file over to your formless project.
+<p>
+Important Notes:
+<ul>
+<li>The licx file must be named "licenses.licx" and be included in the project as an embedded resource.
+<li>If you are developing a class library, the referencing project must also include the .licx file as an embedded resource and be compiled on a machine with a valid license installed.
+<li>Activation checks are made on the developer machine only, not at runtime.
+</ul>
+<p>
+<b>Using a Runtime License</b>
+<p>
+A Runtime License can be assigned to a component instance in order to license the component. This is applicable to all project types for .NET Framework, .NET Core, or .NET 5 (and up). Visit the URL below to generate a Runtime License value.
+<p style="margin-left: 30px">
+<a href="https://www.4dpayments.com/full/DPNJA" target="_blank">https://www.4dpayments.com/full/DPNJA</a>
+</p>
+<p>
+After obtaining the Runtime License value assign this to the RuntimeLicense property to license the application for deployment. For instance:
+<p>
+<var style="margin-left: 30px">
+component.RuntimeLicense  ="&lt;value from above&gt;";
+</var>
+<p>
+This provides a license to the component and your application will run without
+a license prompt on any machine to which it is distributed. 
+<p>
+Note that each component instance in your code must be assigned a Runtime License value.
+
+<p>
+<b>Offline Activation</b>
+<p>
+If your development machine or server does not have internet access, it will be unable to communicate with our licensing servers to verify the license. In this case, you will need to activate your license offline. This applies to development licenses as well as single-server licenses that must be installed on isolated systems.
+<p>
+To install a license offline please download the license keys from the page below.
+<p style="margin-left: 30px">
+<a href="https://www.4dpayments.com/lic?prod=DPNJA" target="_blank">https://www.4dpayments.com/lic?prod=DPNJA</a><p>
+Once you have filled out the form, you will be able to download the <var>keys.reg</var> file.
+Copy the <var>keys.reg</var> file from the online machine to the offline machine and double click the file to import the keys to your registry. After importing the keys, run the setup on the offline machine and it will detect the installed license. 
+</p>
+
+
+<p>
+<h2 style="color:black">Trial Licensing</h2>
+<p>
+When installing by running the setup executable, no other actions are required.
+<p>
+When installing from NuGet, or to deploy to another system during the trial period visit the URL below to generate a 30-day Trial Runtime License value.
+<p style="margin-left: 30px">
+<a href="https://www.4dpayments.com/trial/DPNJA" target="_blank">https://www.4dpayments.com/trial/DPNJA</a>
+<p>
+After obtaining the Runtime License value assign this to the RuntimeLicense property to license the application for deployment. For instance:
+<p>
+<var style="margin-left: 30px">
+component.RuntimeLicense = "&lt;value from above&gt;";
+</var>
+<p>
+This provides a 30-day trial license to the component and your application will run without
+a license prompt on any machine to which it is distributed during that time. 
+<p>
+Note that each component instance in your code must be assigned a Runtime License value.
+<p>
+<h2 style="color:black">Single Server Licensing for ASP.NET - Instructions for Installing a Single Server License on a Shared Host</h2>
+<p>
+If you have purchased a single server license for the .NET Edition, a valid license must be installed on the deployment machine. To install a license visit <a href="https://www.4dpayments.com/lic/?prod=DPNJA" target="_blank">https://www.4dpayments.com/lic/?prod=DPNJA</a> to download a keys.reg file. 
+<p>
+You can run the keys.reg file on the server machine, thus installing the license into the registry of the system. Or, you can rename the keys.reg file to "DPayments.InPay.lic" and copy it to the /bin directory of your Web Application.
+<p>
+<h2 style="color:black">Troubleshooting</h2>
+<p>
+If you have purchased a license, but are still getting a license exception, check the following:
+<p>
+<ul>
+<li>Is there a problem with the licenses.licx file?  Does it exist, is it included in the project, and does it contain the correct information (correct components, correct versions)?
+<li>If you are building an ASP.NET 2.0 application, right click the licenses.licx file and select "Build Runtime Licenses".  Then, rebuild the project.
+<li>If this problem started after you installed a new build of the components, check to make sure that your licenses.licx file contains the correct version information.  If the licenses.licx file contains no version information, that is fine too.
+<li>If you are building a class library, the same licensing rules apply to the referencing application.  Does the referencing application include the .licx file as an embedded resource and is it compiled on a licensed machine?
+</ul>
+
+<h2 style="color:black">License Transfer</h2>
+<p>
+If you would like to transfer your license to another system, please complete our 
+<a href="http://lic.4dpayments.com/lic/transfer/">
+license transfer form</a>.  This will ensure your installations are not mistaken for license violations.
+<p>
+For additional information about our product activation process, please refer to our 
+<a href="http://www.4dpayments.com/support/activation">
+product activation FAQ</a>.
+<br/>
+<br/>
+<br/>
+
+
+		</div>
+	</main>
+</div>
+
+<footer class="help-footer py-2 bg-light sticky-bottom shadow-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="fs-13px text-center">
+					Copyright (c) 2026 4D Payments Inc. - E-Payment Integrator 2024  .NET Edition  [Build 9622]
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script defer src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script defer src="../lib/jquery/js/jquery.min.js" type="text/javascript"></script>
+<script defer src="../lib/highlight/highlight.min.js" type="text/javascript"></script>
+<script defer src="../lib/help.js?v=9622" type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+
+

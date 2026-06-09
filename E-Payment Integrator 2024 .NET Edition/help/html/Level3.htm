@@ -1,0 +1,3730 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>E-Payment Integrator 2024 .NET Edition Reference</title>
+	<meta name="description" 	content="Retail Demo .NET Edition Reference" />
+	<meta name="author" 		content="www.4dpayments.com"> 
+	<meta name="generator" 		content="Retail Demo (E-Payment Integrator 2024 .NET Edition [DPNJA Build 9622]);">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/default.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/highlight/theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/main.css?v=9622" />
+  <link rel="stylesheet" type="text/css" href="../lib/icons.css?v=9622" />
+  <link rel="canonical" href="https://cdn.4dpayments.com/help/DPJ/cs" />
+  	  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WXV8L54S"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-WXV8L54S');</script>
+  <style>:root{--main-color:#307e4a}</style>
+</head>
+
+<body class="bg-light-subtle">
+  <header class="navbar navbar-expand-lg help-navbar sticky-top bg-white shadow-sm">
+    <nav class="container-fluid container-fluid pe-lg-5 ps-lg-4 py-1 ms-2">
+      <div class="d-flex align-items-center justify-content-md-between w-100">
+        <div class="help-navbar-toggle d-lg-none me-2">
+          <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+            <svg version="1.1" id="Layer_1" height="18" width="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.6 16" style="enable-background:new 0 0 25.6 16;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#444444;}
+              </style>
+              <rect x="-0.2" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="7" class="st0" width="25.8" height="2.1"/>
+              <rect x="-0.2" y="13.9" class="st0" width="25.8" height="2.1"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="d-flex">
+          <a class="p-0 me-0 me-lg-2" href="https://www.4dpayments.com/">
+	
+			<img src="help_logo.svg" height="25px" class="logo logo-company"/>		
+			
+          </a>
+          <div class="dropdown">
+            <a href="default.htm" class="d-none d-md-flex common-title" id="help-editions-toggle">
+              E-Payment Integrator 2024 .NET Edition
+              <span class="ms-1 d-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg>
+              </span>
+            </a>
+            <div id="help-editions" class="dropdown-menu">
+                              
+                <li class="dropdown-item"><a href="../acx/default.htm">E-Payment Integrator 2024 ActiveX Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../java/default.htm">E-Payment Integrator 2024 Android Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../bcb/default.htm">E-Payment Integrator 2024 C++ Builder Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cpp/default.htm">E-Payment Integrator 2024 C++ Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../cs/default.htm">E-Payment Integrator 2024 .NET Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../dlp/default.htm">E-Payment Integrator 2024 Delphi Edition</a></li>
+                                  
+                                
+                <li class="dropdown-item"><a href="../mac/default.htm">E-Payment Integrator 2024 macOS Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../php/default.htm">E-Payment Integrator 2024 PHP Edition</a></li>
+                                  
+                <li class="dropdown-item"><a href="../py/default.htm">E-Payment Integrator 2024 Python Edition</a></li>
+                                  
+                            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 fs-13px d-none d-md-block">Version 24.0  [Build 9622]</div>
+      </div>
+    </nav>
+  </header>
+
+    
+  <div class="help-layout container-fluid wide g-0">
+    <aside class="help-sidebar">
+      <nav class="offcanvas-lg offcanvas-start" id="menuSidebar" tabindex="-1">
+        <button class="navbar-toggler p-3 pe-4 border-0 d-flex d-lg-none justify-content-end mt-2 mr-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-label="Toggle help navigation">
+          <svg version="1.1" id="Layer_1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 19.9 19.9" style="enable-background:new 0 0 19.9 19.9;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#444444;}
+            </style>
+            <rect x="-3.1" y="8.9" transform="matrix(0.7071 0.7071 -0.7071 0.7071 9.9235 -4.05)" class="st0" width="25.8" height="2.1"/>
+            <rect x="-2.9" y="8.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 24.0561 9.9432)" class="st0" width="25.8" height="2.1"/>
+          </svg>
+        </button>
+
+        <div id="toc-search" class="dropdown toc-search mt-lg-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+          </svg>
+          <input class="w-100" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" />
+          <div class="dropdown-menu w-100">
+          </div>
+        </div>
+
+        <div id="sidebarMenu" class="sidebar-menu h-100">
+
+
+<!--  BEGIN TOC CONTENT -->
+<UL>
+  <LI>
+  <a href="default.htm">E-Payment Integrator 2024 .NET Edition</a>
+
+  <UL>
+
+
+  <LI> 
+    <a href="default.htm">Introduction</a>
+
+ 
+ 
+
+  <LI> 
+    <a href="samples.htm">Sample Projects</a>
+ 
+
+  <LI> 
+    <a href="licensing.htm#licensing">Licensing Instructions</a>
+    
+
+    
+
+
+  
+    <LI>
+      <a href="pages.htm#pg_icbasiccardinfo" data-bs-toggle="collapse" data-bs-target="#m_pg_icbasiccardinfo">Basic Credit Card Information</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_respcodes" data-bs-toggle="collapse" data-bs-target="#m_pg_respcodes">Gateway Response Codes</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_icgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_icgatewaysetup">ICharge Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_ecgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_ecgatewaysetup">ECheck Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_recgatewaysetup" data-bs-toggle="collapse" data-bs-target="#m_pg_recgatewaysetup">RecurringBilling Gateway Setup and Required Properties</a>
+      
+
+  
+    <LI>
+      <a href="pages.htm#pg_testinginfo" data-bs-toggle="collapse" data-bs-target="#m_pg_testinginfo">Testing Information</a>
+      
+
+
+
+
+  <LI>
+    <a data-bs-toggle="collapse" data-bs-target="#ComponentACHConverter" aria-expanded="true"><span class="ci"></span>Component Reference</a>
+    <UL class="collapse show" id="ComponentACHConverter">
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageACHConverter"></span><a href="ACHConverter.htm#ACHConverter">ACHConverter Component</a>
+  <UL class="collapse" id="pageACHConverter">
+    <LI> 
+      <a href="ACHConverter.htm#ACHConverter">Introduction</a>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#Properties_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ACHConverter"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ACHConverter">
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBatchCount">FileBatchCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileBlockCount">FileBlockCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileCreditTotal">FileCreditTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileDebitTotal">FileDebitTotal</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryCount">FileEntryCount</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_FileEntryHash">FileEntryHash</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputFile">InputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_InputString">InputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputFile">OutputFile</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_OutputString">OutputString</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_Schema">Schema</a>
+
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_p_VerifyMode">VerifyMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ACHConverter.htm#Methods_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ACHConverter"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertACH">ConvertACH</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_ConvertXML">ConvertXML</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetInputStream">SetInputStream</a>        
+
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_m_SetOutputStream">SetOutputStream</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ACHConverter.htm#Events_ACHConverter" data-bs-toggle="collapse" data-bs-target="#Events_ci_ACHConverter"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ACHConverter">
+  
+      <LI>
+        <a href="ACHConverter.htm#ACHConverter_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ACHConverter.htm#ACHConverterErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCardValidator"></span><a href="CardValidator.htm#CardValidator">CardValidator Component</a>
+  <UL class="collapse" id="pageCardValidator">
+    <LI> 
+      <a href="CardValidator.htm#CardValidator">Introduction</a>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#Properties_CardValidator" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CardValidator"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CardValidator">
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpMonth">CardExpMonth</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardExpYear">CardExpYear</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardNumber">CardNumber</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardType">CardType</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_CardTypeDescription">CardTypeDescription</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DateCheckPassed">DateCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_DigitCheckPassed">DigitCheckPassed</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackData">TrackData</a>
+
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_p_TrackType">TrackType</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CardValidator.htm#Methods_CardValidator" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CardValidator"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_m_ValidateCard">ValidateCard</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CardValidator.htm#Events_CardValidator" data-bs-toggle="collapse" data-bs-target="#Events_ci_CardValidator"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CardValidator">
+  
+      <LI>
+        <a href="CardValidator.htm#CardValidator_e_Error">Error</a>
+
+    </UL>
+
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CardValidator.htm#CardValidatorErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCertMgr"></span><a href="CertMgr.htm#CertMgr">CertMgr Component</a>
+  <UL class="collapse" id="pageCertMgr">
+    <LI> 
+      <a href="CertMgr.htm#CertMgr">Introduction</a>
+
+
+
+    <LI>
+      <a href="CertMgr.htm#Properties_CertMgr" data-bs-toggle="collapse" data-bs-target="#Properties_ci_CertMgr"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_CertMgr">
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_Cert">Cert</a>
+
+
+      
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertExtensions">CertExtensions (Collection)</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStore">CertStore</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStorePassword">CertStorePassword</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_CertStoreType">CertStoreType</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportedCert">ExportedCert</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportFormat">ExportFormat</a>
+
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_p_ExportPrivateKey">ExportPrivateKey</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Methods_CertMgr" data-bs-toggle="collapse" data-bs-target="#Methods_ci_CertMgr"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckCRL">CheckCRL</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CheckOCSP">CheckOCSP</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateCertificate">CreateCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_CreateKey">CreateKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteCertificate">DeleteCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_DeleteKey">DeleteKey</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ExportCertificate">ExportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_GenerateCSR">GenerateCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportCertificate">ImportCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ImportSignedCSR">ImportSignedCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_IssueCertificate">IssueCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListCertificateStores">ListCertificateStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListKeys">ListKeys</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListMachineStores">ListMachineStores</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ListStoreCertificates">ListStoreCertificates</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCertificate">ReadCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ReadCSR">ReadCSR</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SaveCertificate">SaveCertificate</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_ShowCertificateChain">ShowCertificateChain</a>        
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_m_SignCSR">SignCSR</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#Events_CertMgr" data-bs-toggle="collapse" data-bs-target="#Events_ci_CertMgr"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_CertMgr">
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertChain">CertChain</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_CertList">CertList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_KeyList">KeyList</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="CertMgr.htm#CertMgr_e_StoreList">StoreList</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="CertMgr.htm#Types_CertMgr" data-bs-toggle="collapse" data-bs-target="#Types_ci_CertMgr"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_CertMgr">
+      <LI>
+        <a href="CertMgr.htm#Type_CertExtension">CertExtension</a>        
+
+      <LI>
+        <a href="CertMgr.htm#Type_Certificate">Certificate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="CertMgr.htm#CertMgrErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageCheck21"></span><a href="Check21.htm#Check21">Check21 Component</a>
+  <UL class="collapse" id="pageCheck21">
+    <LI> 
+      <a href="Check21.htm#Check21">Introduction</a>
+
+
+
+    <LI>
+      <a href="Check21.htm#Properties_Check21" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Check21"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Check21">
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_BusinessDate">BusinessDate</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CashLetterId">CashLetterId</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Checks">Checks (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CollectionType">CollectionType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_CycleNumber">CycleNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationName">DestinationName</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DestinationRoutingNumber">DestinationRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_DocumentationType">DocumentationType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileData">FileData</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_FileName">FileName</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_FTP">FTP</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_Origin">Origin</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_RecordType">RecordType</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_ReturnRoutingNumber">ReturnRoutingNumber</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SettlementDate">SettlementDate</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_p_SSLStartMode">SSLStartMode</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Methods_Check21" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Check21"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildAndUploadFile">BuildAndUploadFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_BuildFile">BuildFile</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_m_Reset">Reset</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Events_Check21" data-bs-toggle="collapse" data-bs-target="#Events_ci_Check21"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Check21">
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="Check21.htm#Check21_e_Status">Status</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Check21.htm#Types_Check21" data-bs-toggle="collapse" data-bs-target="#Types_ci_Check21"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Check21">
+      <LI>
+        <a href="Check21.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_CheckDetail">CheckDetail</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_FTPSettings">FTPSettings</a>        
+
+      <LI>
+        <a href="Check21.htm#Type_Origin">Origin</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Check21.htm#Check21Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Check21.htm#Check21Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageDirectPayment"></span><a href="DirectPayment.htm#DirectPayment">DirectPayment Component</a>
+  <UL class="collapse" id="pageDirectPayment">
+    <LI> 
+      <a href="DirectPayment.htm#DirectPayment">Introduction</a>
+
+
+
+    <LI>
+      <a href="DirectPayment.htm#Properties_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Properties_ci_DirectPayment"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_DirectPayment">
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Authorization">Authorization</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ItemTotal">ItemTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_MerchantSessionId">MerchantSessionId</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payer">Payer</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Payment">Payment</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Response">Response</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Methods_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Methods_ci_DirectPayment"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#Events_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Events_ci_DirectPayment"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_DirectPayment">
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="DirectPayment.htm#DirectPayment_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="DirectPayment.htm#Types_DirectPayment" data-bs-toggle="collapse" data-bs-target="#Types_ci_DirectPayment"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_DirectPayment">
+      <LI>
+        <a href="DirectPayment.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_DirectPaymentPayer">DirectPaymentPayer</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalCard">PayPalCard</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_PayPalResponse">PayPalResponse</a>        
+
+      <LI>
+        <a href="DirectPayment.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="DirectPayment.htm#DirectPaymentErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageECheck"></span><a href="ECheck.htm#ECheck">ECheck Component</a>
+  <UL class="collapse" id="pageECheck">
+    <LI> 
+      <a href="ECheck.htm#ECheck">Introduction</a>
+
+
+
+    <LI>
+      <a href="ECheck.htm#Properties_ECheck" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ECheck"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ECheck">
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Bank">Bank</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CheckNumber">CheckNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_CompanyName">CompanyName</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseDOB">LicenseDOB</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseNumber">LicenseNumber</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_LicenseState">LicenseState</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_MerchantPassword">MerchantPassword</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_PaymentType">PaymentType</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ECheck.htm#ECheck_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TaxId">TaxId</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Methods_ECheck" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ECheck"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Authorize">Authorize</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#Events_ECheck" data-bs-toggle="collapse" data-bs-target="#Events_ci_ECheck"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ECheck">
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ECheck.htm#ECheck_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ECheck.htm#Types_ECheck" data-bs-toggle="collapse" data-bs-target="#Types_ci_ECheck"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ECheck">
+      <LI>
+        <a href="ECheck.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ECheck.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ECheck.htm#ECheckConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ECheck.htm#ECheckErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageExpressCheckout"></span><a href="ExpressCheckout.htm#ExpressCheckout">ExpressCheckout Component</a>
+  <UL class="collapse" id="pageExpressCheckout">
+    <LI> 
+      <a href="ExpressCheckout.htm#ExpressCheckout">Introduction</a>
+
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Properties_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ExpressCheckout"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ExpressCheckout">
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Ack">Ack</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Authorization">Authorization</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_BuyerEmail">BuyerEmail</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_CancelURL">CancelURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ContactPhone">ContactPhone</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_InvoiceNumber">InvoiceNumber</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Items">Items (Collection)</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Note">Note</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderDescription">OrderDescription</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_OrderTotal">OrderTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Password">Password</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payer">Payer</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PayerId">PayerId</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Payment">Payment</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_PaymentAction">PaymentAction</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ResponseToken">ResponseToken</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_ShippingTotal">ShippingTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Signature">Signature</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_TaxTotal">TaxTotal</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_Token">Token</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_URL">URL</a>
+
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_p_User">User</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Methods_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ExpressCheckout"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_AddCustomField">AddCustomField</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_CheckoutPayment">CheckoutPayment</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetCheckoutDetails">GetCheckoutDetails</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_SetCheckout">SetCheckout</a>        
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#Events_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Events_ci_ExpressCheckout"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ExpressCheckout">
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ExpressCheckout.htm#ExpressCheckout_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#Types_ExpressCheckout" data-bs-toggle="collapse" data-bs-target="#Types_ci_ExpressCheckout"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ExpressCheckout">
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_ExpressCheckoutPayer">ExpressCheckoutPayer</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPayment">PayPalPayment</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_PayPalPaymentItem">PayPalPaymentItem</a>        
+
+      <LI>
+        <a href="ExpressCheckout.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ExpressCheckout.htm#ExpressCheckoutErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageICharge"></span><a href="ICharge.htm#ICharge">ICharge Component</a>
+  <UL class="collapse" id="pageICharge">
+    <LI> 
+      <a href="ICharge.htm#ICharge">Introduction</a>
+
+
+
+    <LI>
+      <a href="ICharge.htm#Properties_ICharge" data-bs-toggle="collapse" data-bs-target="#Properties_ci_ICharge"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_ICharge">
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="ICharge.htm#ICharge_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Methods_ICharge" data-bs-toggle="collapse" data-bs-target="#Methods_ci_ICharge"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#Events_ICharge" data-bs-toggle="collapse" data-bs-target="#Events_ci_ICharge"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_ICharge">
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="ICharge.htm#ICharge_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="ICharge.htm#Types_ICharge" data-bs-toggle="collapse" data-bs-target="#Types_ci_ICharge"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_ICharge">
+      <LI>
+        <a href="ICharge.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCard">EPCard</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="ICharge.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="ICharge.htm#IChargeConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="ICharge.htm#IChargeErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel2"></span><a href="Level2.htm#Level2">Level2 Component</a>
+  <UL class="collapse" id="pageLevel2">
+    <LI> 
+      <a href="Level2.htm#Level2">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level2.htm#Properties_Level2" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level2"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level2">
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_DutyAmount">DutyAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_FreightAmount">FreightAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_PONumber">PONumber</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipFromZip">ShipFromZip</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_ShipToZip">ShipToZip</a>
+
+
+      
+      <LI>
+        <a href="Level2.htm#Level2_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxAmount">TaxAmount</a>
+
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_p_TaxExempt">TaxExempt</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Methods_Level2" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level2"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level2.htm#Level2_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Events_Level2" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level2"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level2">
+  
+      <LI>
+        <a href="Level2.htm#Level2_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level2.htm#Types_Level2" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level2"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level2">
+      <LI>
+        <a href="Level2.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level2.htm#Level2Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level2.htm#Level2Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageLevel3"></span><a href="Level3.htm#Level3">Level3 Component</a>
+  <UL class="collapse" id="pageLevel3">
+    <LI> 
+      <a href="Level3.htm#Level3">Introduction</a>
+
+
+
+    <LI>
+      <a href="Level3.htm#Properties_Level3" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Level3"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Level3">
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_LineItems">LineItems (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Level3.htm#Level3_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Methods_Level3" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Level3"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Level3.htm#Level3_m_GetAggregate">GetAggregate</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Events_Level3" data-bs-toggle="collapse" data-bs-target="#Events_ci_Level3"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Level3">
+  
+      <LI>
+        <a href="Level3.htm#Level3_e_Error">Error</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Level3.htm#Types_Level3" data-bs-toggle="collapse" data-bs-target="#Types_ci_Level3"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Level3">
+      <LI>
+        <a href="Level3.htm#Type_EPLineItem">EPLineItem</a>        
+
+      <LI>
+        <a href="Level3.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Level3.htm#Level3Config">Config Settings</a>
+
+
+    <LI>
+      <a href="Level3.htm#Level3Errors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageOAuth"></span><a href="OAuth.htm#OAuth">OAuth Component</a>
+  <UL class="collapse" id="pageOAuth">
+    <LI> 
+      <a href="OAuth.htm#OAuth">Introduction</a>
+
+
+
+    <LI>
+      <a href="OAuth.htm#Properties_OAuth" data-bs-toggle="collapse" data-bs-target="#Properties_ci_OAuth"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_OAuth">
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessToken">AccessToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AccessTokenExp">AccessTokenExp</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationCode">AuthorizationCode</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_AuthorizationScope">AuthorizationScope</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientId">ClientId</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientProfile">ClientProfile</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ClientSecret">ClientSecret</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Connected">Connected</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Cookies">Cookies (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Firewall">Firewall</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_FollowRedirects">FollowRedirects</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_GrantType">GrantType</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Idle">Idle</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_LocalHost">LocalHost</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_OtherHeaders">OtherHeaders</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Params">Params (Collection)</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Proxy">Proxy</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_RefreshToken">RefreshToken</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ReturnURL">ReturnURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerAuthURL">ServerAuthURL</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_ServerTokenURL">ServerTokenURL</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredData">TransferredData</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_TransferredHeaders">TransferredHeaders</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_UsePKCE">UsePKCE</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerPort">WebServerPort</a>
+
+
+      
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLCert">WebServerSSLCert</a>
+
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_p_WebServerSSLEnabled">WebServerSSLEnabled</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Methods_OAuth" data-bs-toggle="collapse" data-bs-target="#Methods_ci_OAuth"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddCookie">AddCookie</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_AddParam">AddParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorization">GetAuthorization</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetAuthorizationURL">GetAuthorizationURL</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_GetParam">GetParam</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StartWebServer">StartWebServer</a>        
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_m_StopWebServer">StopWebServer</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#Events_OAuth" data-bs-toggle="collapse" data-bs-target="#Events_ci_OAuth"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_OAuth">
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Connected">Connected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ConnectionStatus">ConnectionStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Disconnected">Disconnected</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_EndTransfer">EndTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Header">Header</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_LaunchBrowser">LaunchBrowser</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Log">Log</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Redirect">Redirect</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_ReturnURL">ReturnURL</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SetCookie">SetCookie</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_SSLStatus">SSLStatus</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_StartTransfer">StartTransfer</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Status">Status</a>
+
+  
+      <LI>
+        <a href="OAuth.htm#OAuth_e_Transfer">Transfer</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="OAuth.htm#Types_OAuth" data-bs-toggle="collapse" data-bs-target="#Types_ci_OAuth"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_OAuth">
+      <LI>
+        <a href="OAuth.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Firewall">Firewall</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_HTTPCookie">HTTPCookie</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_OAuthParam">OAuthParam</a>        
+
+      <LI>
+        <a href="OAuth.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="OAuth.htm#OAuthConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="OAuth.htm#OAuthErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRecurringBilling"></span><a href="RecurringBilling.htm#RecurringBilling">RecurringBilling Component</a>
+  <UL class="collapse" id="pageRecurringBilling">
+    <LI> 
+      <a href="RecurringBilling.htm#RecurringBilling">Introduction</a>
+
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Properties_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Properties_ci_RecurringBilling"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_RecurringBilling">
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Customer">Customer</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckBank">ECheckBank</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ECheckPaymentType">ECheckPaymentType</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_PaymentSchedule">PaymentSchedule</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDesc">SubscriptionDesc</a>
+
+
+      
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionDetails">SubscriptionDetails</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_SubscriptionName">SubscriptionName</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Methods_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Methods_ci_RecurringBilling"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CancelSubscription">CancelSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_CreateSubscription">CreateSubscription</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_GetSubscriptionStatus">GetSubscriptionStatus</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_m_UpdateSubscription">UpdateSubscription</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#Events_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Events_ci_RecurringBilling"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_RecurringBilling">
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="RecurringBilling.htm#RecurringBilling_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#Types_RecurringBilling" data-bs-toggle="collapse" data-bs-target="#Types_ci_RecurringBilling"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_RecurringBilling">
+      <LI>
+        <a href="RecurringBilling.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPBank">EPBank</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPPaymentSchedule">EPPaymentSchedule</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPRecurringResponse">EPRecurringResponse</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_EPSubscriptionDetails">EPSubscriptionDetails</a>        
+
+      <LI>
+        <a href="RecurringBilling.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="RecurringBilling.htm#RecurringBillingErrors">Error Codes</a>
+
+
+  </UL>
+    <LI>
+      <span class="ci" data-bs-toggle="collapse" data-bs-target="#pageRetail"></span><a href="Retail.htm#Retail">Retail Component</a>
+  <UL class="collapse" id="pageRetail">
+    <LI> 
+      <a href="Retail.htm#Retail">Introduction</a>
+
+
+
+    <LI>
+      <a href="Retail.htm#Properties_Retail" data-bs-toggle="collapse" data-bs-target="#Properties_ci_Retail"><span class="ci"></span>Properties</a>
+
+    <UL class="collapse" id="Properties_ci_Retail">
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_AuthCode">AuthCode</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Card">Card</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Customer">Customer</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Gateway">Gateway</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_GatewayURL">GatewayURL</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_InvoiceNumber">InvoiceNumber</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level2Aggregate">Level2Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Level3Aggregate">Level3Aggregate</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantLogin">MerchantLogin</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_MerchantPassword">MerchantPassword</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Proxy">Proxy</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_Response">Response</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_ShippingInfo">ShippingInfo</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SpecialFields">SpecialFields (Collection)</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLAcceptServerCert">SSLAcceptServerCert</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLCert">SSLCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLProvider">SSLProvider</a>
+
+
+      
+      <LI>
+        <a href="Retail.htm#Retail_p_SSLServerCert">SSLServerCert</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TestMode">TestMode</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_Timeout">Timeout</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionAmount">TransactionAmount</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionDesc">TransactionDesc</a>
+
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_p_TransactionId">TransactionId</a>
+
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Methods_Retail" data-bs-toggle="collapse" data-bs-target="#Methods_ci_Retail"><span class="ci"></span>Methods</a>
+
+    <UL class="collapse" id="Methods_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AddSpecialField">AddSpecialField</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AuthOnly">AuthOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_AVSOnly">AVSOnly</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Capture">Capture</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Config">Config</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Credit">Credit</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_DoEvents">DoEvents</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Force">Force</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_GetResponseVar">GetResponseVar</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Interrupt">Interrupt</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Refund">Refund</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Reset">Reset</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_ResetSpecialFields">ResetSpecialFields</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_Sale">Sale</a>        
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_m_VoidTransaction">VoidTransaction</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#Events_Retail" data-bs-toggle="collapse" data-bs-target="#Events_ci_Retail"><span class="ci"></span>Events</a>
+
+    <UL class="collapse" id="Events_ci_Retail">
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_Error">Error</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLServerAuthentication">SSLServerAuthentication</a>
+
+  
+      <LI>
+        <a href="Retail.htm#Retail_e_SSLStatus">SSLStatus</a>
+
+    </UL>
+
+
+    <LI>
+      <a href="Retail.htm#Types_Retail" data-bs-toggle="collapse" data-bs-target="#Types_ci_Retail"><span class="ci"></span>Types</a>
+
+    <UL class="collapse" id="Types_ci_Retail">
+      <LI>
+        <a href="Retail.htm#Type_CCCard">CCCard</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Certificate">Certificate</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPCustomer">EPCustomer</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPResponse">EPResponse</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPShipInfo">EPShipInfo</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_EPSpecialField">EPSpecialField</a>        
+
+      <LI>
+        <a href="Retail.htm#Type_Proxy">Proxy</a>        
+
+    </UL>
+
+    <LI>
+      <a href="Retail.htm#RetailConfig">Config Settings</a>
+
+
+    <LI>
+      <a href="Retail.htm#RetailErrors">Error Codes</a>
+
+
+  </UL>
+    </UL>
+
+
+  <LI>
+    <a href="License.htm#license">Software License</a>
+
+</UL>
+<!-- END TOC CONTENT -->
+        </div>
+      </nav>
+    </aside>
+
+    <main class="help-main bg-body shadow-sm px-4 px-lg-0 ps-lg-4">
+      <div class="help-toc d-none d-lg-block">
+        <nav id="helpToc" class="ps-3 pb-4 mb-4">
+        </nav>
+      </div>
+      <div class="help-content pt-3" id="helpContent">
+
+
+
+<h1 id="Level3">Level3 Component</h1>
+
+<p>
+<a href="#Level3_Properties">Properties</a> &nbsp; 
+<a href="#Level3_Methods">Methods</a> &nbsp; 
+<a href="#Level3_Events">Events</a> &nbsp; 
+<a href="#Level3_Configs">Config Settings</a> &nbsp; 
+<a href="#Level3Errors">Errors</a> &nbsp;  
+</p>
+
+
+<p>The <B> Level3 </B> component is a tool used to create Level3 Corporate Purchasing Card aggregates, 
+which can then be passed to the ICharge or Retail components.</p>
+
+<h2 id="Level3_Syntax">Syntax</h2>
+<pre class="syntax"><b>DPayments.InPay.<a href="javascript:void(0)">Level3</a></b></pre>
+
+<h2 id="Level3_Remarks">Remarks</h2>
+
+
+<p>The available fields for each gateway supporting Level 3 data can be found below.  Note: This list of fields 
+does not designate what is required but rather only the fields made available by the gateway.  For the required 
+fields required to obtain the best rates, please consult your gateway for further information.
+
+<div class='table-responsive'><table class='table'><tr class='d-none'><td /><td /><tr><td class='text-nowrap'><b>Gateway</b></td><td class=' text-start'><b>Quantity</b></td><td class=' text-start'><b>CommodityCode</b></td><td class=' text-start'><b>Name</b></td><td class=' text-start'><b>Description</b></td><td class=' text-start'><b>Units</b></td><td class=' text-start'><b>UnitCost</b></td><td class=' text-start'><b>ProductCode</b></td><td class=' text-start'><b>DiscountAmount</b></td><td class=' text-start'><b>DiscountRate</b></td><td class=' text-start'><b>Total</b></td><td class=' text-start'><b>Taxable</b></td><td class=' text-start'><b>TaxAmount</b></td><td class=' text-start'><b>TaxRate</b></td><td class='text-start'><b>TaxType</b></td><tr><td class='text-nowrap'>gwAuthorizeNet (1)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPayFlowPro (6)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwUSAePay (7)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'></td><tr><td class='text-nowrap'>gwPlugNPay (8)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwMPCS (10)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwRTWare (11)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwECX (12)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwBankOfAmerica (13)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gw3DSI (18)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwTrustCommerce (19)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPSIGate (20)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPayFuse (21)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwOrbital (23)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwLinkPoint (24)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwMoneris (25)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwNetworkMerchants (28)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwIngenico (29)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwFirstData (33)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwYourPay (34)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwCyberSource (37)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwGoEMerchant (39)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwChase (41)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwSterling (45)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwMonerisUSA (52)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwBambora (53)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwVerifi (54)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwLitle (63)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwHSBC (66)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwBluePay (67)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'></td><tr><td class='text-nowrap'>gwBarclay (69)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPayTrace (70)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwTransNationalBankcard (74)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwDataCash (77)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class='text-start'></td><tr><td class='text-nowrap'>gwFirstDataE4 (80)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwPayscape (83)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwAuthorizeNetCIM (85)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gw5thDimension (86)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPaymentWorkSuite (88)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPSIGateXML (89)</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class=' text-start'></td><td class='text-start'></td><tr><td class='text-nowrap'>gwPayeezy (94)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td><tr><td class='text-nowrap'>gwAmericanPaymentSolutions (105)</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class=' text-start'></td><td class=' text-start'>X</td><td class=' text-start'>X</td><td class='text-start'>X</td></tr></table></div></p>
+
+
+
+<h2 id="Level3_Properties">Property List</h2>
+<hr/>
+<p><i>The following is the full list of the properties of the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+
+<tr valign="top"><td><a href="#Level3_p_LineItems">LineItems</a></td><td>A collection of line items to be included in the Level 3 addendum.</td></tr>
+
+
+
+<tr valign="top"><td><a href="#Level3_p_SpecialFields">SpecialFields</a></td><td>A list of additional fields to send in the request.</td></tr>
+
+
+</table>
+</div>
+
+<h2 id="Level3_Methods">Method List</h2>
+<hr/>
+<p><i>The following is the full list of the methods of the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#Level3_m_AddSpecialField">AddSpecialField</a></td><td>Adds a special field name and the corresponding value.</td></tr>
+
+<tr valign="top"><td><a href="#Level3_m_Config">Config</a></td><td>Sets or retrieves a configuration setting.</td></tr>
+
+<tr valign="top"><td><a href="#Level3_m_GetAggregate">GetAggregate</a></td><td>Returns an aggregate containing level 3 details for a transaction.</td></tr>
+
+</table>
+</div>
+
+<h2 id="Level3_Events">Event List</h2>
+<hr/>
+<p><i>The following is the full list of the events fired by the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#Level3_e_Error">Error</a></td><td>Information about errors during data delivery.</td></tr>
+
+</table>
+</div>
+
+<h2 id="Level3_Configs">Config Settings</h2>
+<hr/>
+<p><i>The following is a list of config settings for the component with short descriptions. Click on the links for further details.</i></p>
+<div class="table-responsive">
+<table><tr><td></td><td></td></tr>
+<tr valign="top"><td><a href="#EscapeXML">EscapeXML</a></td><td>Automatically escape the data in the aggregate.</td></tr>
+
+<tr valign="top"><td><a href="#BuildInfo">BuildInfo</a></td><td>Information about the product's build.</td></tr>
+
+<tr valign="top"><td><a href="#GUIAvailable">GUIAvailable</a></td><td>Whether or not a message loop is available for processing events.</td></tr>
+
+<tr valign="top"><td><a href="#LicenseInfo">LicenseInfo</a></td><td>Information about the current license.</td></tr>
+
+<tr valign="top"><td><a href="#MaskSensitiveData">MaskSensitiveData</a></td><td>Whether sensitive data is masked in log messages.</td></tr>
+
+<tr valign="top"><td><a href="#UseInternalSecurityAPI">UseInternalSecurityAPI</a></td><td>Whether or not to use the system security libraries or an internal implementation.</td></tr>
+
+</table>
+</div>
+
+<a name="Properties_Level3"></a>
+
+
+<h1 id="Level3_p_LineItems">LineItems Property (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>A collection of line items to be included in the Level 3 addendum.</p>
+<h2 id="Level3_p_LineItems_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_p_LineItems" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_p_LineItems" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_p_LineItems">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="#Type_EPLineItem">EPLineItemList</a> LineItems <b>{ get; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_p_LineItems">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> LineItems <b>As</b> <a href="#Type_EPLineItem">EPLineItemList</a>
+</pre></div></div>
+
+
+<h2 id="Level3_p_LineItems_Remarks">Remarks</h2>
+
+<p>This property contains a collection of line items to be included in the Level 3 addendum.
+</p>
+
+<p>Please refer to <a href="#Level3">Level3</a>
+to identify which LineItems are required for the gateway you are implementing.
+</p>
+
+<p>An example of setting two line items for a Visa Corporate purchasing card follows:
+</p>
+
+<p><code>	Level3.LineItems.Add(new EPLineItem());
+  Level3.LineItems[0].CommodityCode = "4900"; // Books and printed materials
+  Level3.LineItems[0].Description = "Reference manual";
+  Level3.LineItems[0].DiscountAmount = ""; // No discount
+  Level3.LineItems[0].ProductCode = "ISBN123456";
+  Level3.LineItems[0].Quantity = "2";
+  Level3.LineItems[0].TaxAmount = "60";
+  Level3.LineItems[0].TaxRate = "600"; // 6.00 percent
+  Level3.LineItems[0].Total = "1060";
+  Level3.LineItems[0].UnitCost = "500";
+  Level3.LineItems[0].Units = "each";
+
+	Level3.LineItems.Add(new EPLineItem());
+  Level3.LineItems[1].CommodityCode = "4900";
+  Level3.LineItems[1].Description = "Quick Start manual";
+  Level3.LineItems[1].DiscountAmount = "";
+  Level3.LineItems[1].ProductCode = "ISBN654321";
+  Level3.LineItems[1].Quantity = "1";
+  Level3.LineItems[1].TaxAmount = "60";
+  Level3.LineItems[1].TaxRate = "600"; // 6.00 percent
+  Level3.LineItems[1].Total = "1060";
+  Level3.LineItems[1].UnitCost = "1000";
+  Level3.LineItems[1].Units = "each";</code>
+</p>
+
+
+
+Please refer to the <a href="#Type_EPLineItem">EPLineItem</a> type for a complete list of fields.
+
+
+
+
+<h1 id="Level3_p_SpecialFields">SpecialFields Property (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>A list of additional fields to send in the request.</p>
+<h2 id="Level3_p_SpecialFields_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_p_SpecialFields" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_p_SpecialFields" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_p_SpecialFields">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public </b><a href="#Type_EPSpecialField">EPSpecialFieldList</a> SpecialFields <b>{ get; }</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_p_SpecialFields">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Property</b> SpecialFields <b>As</b> <a href="#Type_EPSpecialField">EPSpecialFieldList</a>
+</pre></div></div>
+
+
+<h2 id="Level3_p_SpecialFields_Remarks">Remarks</h2>
+
+<p>This property contains a collection of <a href="#Type_EPSpecialField">EPSpecialField</a> name/value pair objects. The <u>Gateway</u>
+may put some special configuration fields into this property which you can edit or add to. This allows
+you to extend the functionality of the component by adding fields for which there are not currently properties for.
+
+
+</p>
+
+
+<p>This property is not available at design time.</p>
+
+Please refer to the <a href="#Type_EPSpecialField">EPSpecialField</a> type for a complete list of fields.
+
+
+
+
+<a name="Methods_Level3"></a>
+
+<h1 id="Level3_m_AddSpecialField">AddSpecialField Method (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>Adds a special field name and the corresponding value.</p>
+
+<h2 id="Level3_m_AddSpecialField_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_m_AddSpecialField" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_m_AddSpecialField" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_m_AddSpecialField">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">void</a> <b>AddSpecialField(</b><a href="javascript:void(0)">string</a> <i>name</i>, <a href="javascript:void(0)">string</a> <i>value</i><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_m_AddSpecialField">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Sub AddSpecialField(</b><b>ByVal</b> <i>Name</i> <b>As</b> <a href="javascript:void(0)">String</a>, <b>ByVal</b> <i>Value</i> <b>As</b> <a href="javascript:void(0)">String</a><b>)</b>
+</pre></div></div>
+
+<h2 id="Level3_m_AddSpecialField_Remarks">Remarks</h2>
+
+<p>This method allows for specifying special fields for level 3 details at a transaction as well as a line item level. 
+Typically level 3 details pertain to item details, however some gateways expose fields that are not item specific. 
+This method allows you to specify these fields.  Additionally you can specify item specific fields that aren't exposed 
+via <a href="#Level3_p_LineItems">LineItems</a>.  Please consult the gateways specifications to obtain available fields and their format.
+</p>
+
+<p>Gateways implemented using XML may require the elements to be split into their own line item elements.  In such a case, 
+the specified <i>Name</i> value can be specified in the form "[index]:[name]" (where 'index' is the <a href="#Level3_p_LineItems">LineItems</a> 
+index and 'name' is the name of the element you wish to add).  The component will then parse the format and place line item 
+data within the correct element in the request.
+</p>
+
+<p>The following gateways are implemented using XML and support indexed special field values:
+<ul><li>gwBankOfAmerica (13)</li><li>gwOrbital (23)</li><li>gwSterling (45)</li><li>gwLitle (63)</li><li>gwPayTrace (70)</li><li>gwDataCash (77)</li><li>gwFirstDataE4 (80)</li></ul>
+</p>
+
+<p>Please refer to the <a href="#EPSpecialField_f_Name">Name</a> and <a href="#EPSpecialField_f_Value">Value</a> fields for more information on form variables and how they are managed.</p>
+
+
+
+
+<h1 id="Level3_m_Config">Config Method (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>Sets or retrieves a configuration setting.</p>
+
+<h2 id="Level3_m_Config_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_m_Config" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_m_Config" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_m_Config">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">string</a> <b>Config(</b><a href="javascript:void(0)">string</a> <i>configurationString</i><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_m_Config">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Function Config(</b><b>ByVal</b> <i>ConfigurationString</i> <b>As</b> <a href="javascript:void(0)">String</a><b>)</b> <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="Level3_m_Config_Remarks">Remarks</h2>
+
+<p><u>Config</u> is a generic method available in every component.
+It is used to set and retrieve <a href="#Level3Config">configuration settings</a> for the
+component.</p>
+
+<p>These settings are similar in functionality to properties,
+but they are rarely used.  In order to avoid "polluting" the property
+namespace of the component, access to these <i>internal properties</i>
+is provided through the <u>Config</u> method.</p>
+
+<p>To set a configuration setting named <i>PROPERTY</i>, you must call
+<i>Config("PROPERTY=VALUE")</i>, where <i>VALUE</i> is the
+value  of the setting expressed as a string.  For boolean values,
+use the strings "True", "False", "0", "1", "Yes", or "No" (case does
+not matter).</p>
+
+<p>To read (query) the value of a <a href="#Level3Config">configuration setting</a>, you must call
+<i>Config("PROPERTY")</i>.  The value will be returned as a string.
+
+
+
+</p>
+
+
+
+
+<h1 id="Level3_m_GetAggregate">GetAggregate Method (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>Returns an aggregate containing level 3 details for a transaction.</p>
+
+<h2 id="Level3_m_GetAggregate_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_m_GetAggregate" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_m_GetAggregate" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_m_GetAggregate">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public</b> <a href="javascript:void(0)">string</a> <b>GetAggregate(</b><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_m_GetAggregate">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Function GetAggregate(</b><b>)</b> <b>As</b> <a href="javascript:void(0)">String</a>
+</pre></div></div>
+
+<h2 id="Level3_m_GetAggregate_Remarks">Remarks</h2>
+
+<p>This method returns an aggregate containing the level 3 data specified.  This aggregate must be passed to the <a href="ICharge.htm#ICharge">ICharge</a> 
+component's <b>Level3Aggregate</b> property in order for the level 3 data to be sent in the transaction. Each gateway has 
+different requirements when processing level 3 transactions.  Please refer to <a href="#Level3">Level3</a> 
+to identify which properties are required for the gateway you are implementing.
+</p>
+
+<p>An example of how this method is used is shown below:</p>
+
+<p><code>	Level3.LineItems.Add(new EPLineItem());
+  Level3.LineItems[0].CommodityCode = "4900"; // Books and printed materials
+  Level3.LineItems[0].Description = "Reference manual";
+  Level3.LineItems[0].DiscountAmount = ""; // No discount
+  Level3.LineItems[0].ProductCode = "ISBN123456";
+  Level3.LineItems[0].Quantity = "2";
+  Level3.LineItems[0].TaxAmount = "60";
+  Level3.LineItems[0].TaxRate = "600"; // 6.00 percent
+  Level3.LineItems[0].Total = "1060";
+  Level3.LineItems[0].UnitCost = "500";
+  Level3.LineItems[0].Units = "each";
+
+	Level3.LineItems.Add(new EPLineItem());
+  Level3.LineItems[1].CommodityCode = "4900";
+  Level3.LineItems[1].Description = "Quick Start manual";
+  Level3.LineItems[1].DiscountAmount = "";
+  Level3.LineItems[1].ProductCode = "ISBN654321";
+  Level3.LineItems[1].Quantity = "1";
+  Level3.LineItems[1].TaxAmount = "60";
+  Level3.LineItems[1].TaxRate = "600"; // 6.00 percent
+  Level3.LineItems[1].Total = "1060";
+  Level3.LineItems[1].UnitCost = "1000";
+  Level3.LineItems[1].Units = "each";
+  
+  ICharge.Level3Aggregate = Level3.GetAggregate();</code>
+
+
+
+
+
+
+</p>
+
+
+
+
+<a name="Events_Level3"></a>
+
+<h1 id="Level3_e_Error">Error Event (<a href="#Level3">Level3</a> Component)</h1>
+
+<p>Information about errors during data delivery.</p>
+
+<h2 id="Level3_e_Error_Syntax">Syntax</h2>
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-Level3_e_Error" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-Level3_e_Error" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-Level3_e_Error">
+<!-- C# Syntax -->
+<pre class="syntax">
+<b>public event <a href="javascript:void(0)">OnErrorHandler</a> <i>OnError</i>;</b>
+
+<b>public delegate</b> <a href="javascript:void(0)">void</a> <b><a href="javascript:void(0)">OnErrorHandler</a>(</b><a href="javascript:void(0)">object</a> <i>sender</i>, <a href="javascript:void(0)">Level3ErrorEventArgs</a> <i>e</i><b>);</b>
+
+<b>public class</b> <a href="javascript:void(0)">Level3ErrorEventArgs</a> : <a href="javascript:void(0)">EventArgs</a> <b>{</b>
+  <b>public</b> <a href="javascript:void(0)">int</a> ErrorCode { <b>get;</b> }
+  <b>public</b> <a href="javascript:void(0)">string</a> Description { <b>get;</b> }
+<b>}</b>
+</pre></div>
+<div class="tab-pane" id="vb-Level3_e_Error">
+<!-- VB.NET Syntax -->
+<pre class="syntax">
+<b>Public Event <i>OnError</i> As <a href="javascript:void(0)">OnErrorHandler</a></b>
+
+<b>Public Delegate Sub <a href="javascript:void(0)">OnErrorHandler</a>(</b><i>sender</i> <b>As</b> <a href="javascript:void(0)">Object</a>, <i>e</i> <b>As</b> <a href="javascript:void(0)">Level3ErrorEventArgs</a><b>)</b>
+
+<b>Public Class</b> <a href="javascript:void(0)">Level3ErrorEventArgs</a> <b>Inherits</b> <a href="javascript:void(0)">EventArgs</a>
+  <b>Public ReadOnly Property</b> ErrorCode <b>As</b> <a href="javascript:void(0)">Integer</a>
+  <b>Public ReadOnly Property</b> Description <b>As</b> <a href="javascript:void(0)">String</a>
+<b>End Class</b>
+</pre></div></div>
+
+<h2 id="Level3_e_Error_Remarks">Remarks</h2>
+
+<p>The <u>Error</u> event is fired in case of exceptional conditions
+during message processing.</p>
+
+<p><i>ErrorCode</i> contains an error code and <i>Description</i> contains
+a textual description of the error.  For a list of valid error
+codes and their descriptions, please refer to the <a href="#Level3Errors">Error Codes</a>
+section. 
+
+</p>
+
+
+
+<a name="Types_Level3"></a>
+<h1 id="Type_EPLineItem">EPLineItem Type</h1>
+
+<p>Contains a single Level 3 line item.</p>
+
+<h2 id="Level3_type_EPLineItem_Remarks">Remarks</h2>
+
+<p>This type contains a single line item, used for Level 3 settlements. The fields contained by this
+type are listed below.
+
+
+
+
+</p>
+
+
+<div class="mb-2">The following fields are available:</div>
+<ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-0">
+  <li class="col" title="CommodityCode"><a href="#EPLineItem_f_CommodityCode">CommodityCode</a></li>
+  <li class="col" title="Description"><a href="#EPLineItem_f_Description">Description</a></li>
+  <li class="col" title="DiscountAmount"><a href="#EPLineItem_f_DiscountAmount">DiscountAmount</a></li>
+  <li class="col" title="DiscountRate"><a href="#EPLineItem_f_DiscountRate">DiscountRate</a></li>
+  <li class="col" title="Name"><a href="#EPLineItem_f_Name">Name</a></li>
+  <li class="col" title="ProductCode"><a href="#EPLineItem_f_ProductCode">ProductCode</a></li>
+  <li class="col" title="Quantity"><a href="#EPLineItem_f_Quantity">Quantity</a></li>
+  <li class="col" title="Taxable"><a href="#EPLineItem_f_Taxable">Taxable</a></li>
+  <li class="col" title="TaxAmount"><a href="#EPLineItem_f_TaxAmount">TaxAmount</a></li>
+  <li class="col" title="TaxRate"><a href="#EPLineItem_f_TaxRate">TaxRate</a></li>
+  <li class="col" title="TaxType"><a href="#EPLineItem_f_TaxType">TaxType</a></li>
+  <li class="col" title="Total"><a href="#EPLineItem_f_Total">Total</a></li>
+  <li class="col" title="UnitCost"><a href="#EPLineItem_f_UnitCost">UnitCost</a></li>
+  <li class="col" title="Units"><a href="#EPLineItem_f_Units">Units</a></li>
+</ul>
+
+<h2 id="Level3_type_EPLineItem_Fields">Fields</h2>
+
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_CommodityCode><b>CommodityCode</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Code indicating the type of goods or services sold.
+</p>
+
+<p>This field should contain an international description code of the overall goods or 
+services being supplied. The acquirer bank or processor should provide the merchant an 
+updated listing of currently defined codes.
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Description><b>Description</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Description of the item.
+</p>
+
+<p>This field contains an alphanumeric description of the item(s) being supplied. 
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_DiscountAmount><b>DiscountAmount</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Amount of the discount for each line item (if any).
+</p>
+
+<p>This field contains the amount of any discount applied by the merchant to this line item. This field 
+should be empty (or zero) if the <a href="#EPLineItem_f_UnitCost">UnitCost</a> reflects a discount price or if no line item discount applies.
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_DiscountRate><b>DiscountRate</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Rate of the discount for each line item (if any).
+</p>
+
+<p>This field contains the discount percentage applied by the merchant to this line item. This field 
+should be empty (or zero) if the <a href="#EPLineItem_f_UnitCost">UnitCost</a> reflects a discount price or if no line item discount applies.
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Name><b>Name</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Name of the item.
+</p>
+
+<p>This field contains the name of the item(s) being supplied. 
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_ProductCode><b>ProductCode</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Product code of the item purchased.
+</p>
+
+<p>This field contains a code assigned to the product by the merchant. 
+This may be a UPC or any other code with which the merchant wishes to identify an individual product. 
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Quantity><b>Quantity</b><br/><i>int</i></a>
+<br />Default: <span class="text-lowercase">0</span>
+</p>
+
+<p>Quantity of items in this Line Item.
+</p>
+
+<p>This field contains the quantity of items being purchased, in whole numbers. </p>
+
+<p>For Orbital Gateway this field must include 4 decimals without the decimal separator. For example for 1 quantity this field must be set to 10000.
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Taxable><b>Taxable</b><br/><i>bool</i></a>
+<br />Default: <span class="text-lowercase">False</span>
+</p>
+
+<p>Specifies whether the items in this Line Item are taxable.
+</p>
+
+<p>This field identifies whether this line item is taxable. 
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_TaxAmount><b>TaxAmount</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Tax on this individual item.
+</p>
+
+<p>This field contains the amount of any Value Added Taxes (VAT) which can be associated with the purchased item.
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_TaxRate><b>TaxRate</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Tax rate used to calculate the <a href="#EPLineItem_f_TaxAmount">TaxAmount</a>.
+</p>
+
+<p>This field contains the tax rate used to calculate the <a href="#EPLineItem_f_TaxAmount">TaxAmount</a>. 
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_TaxType><b>TaxType</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Type of tax charged in <a href="#EPLineItem_f_TaxAmount">TaxAmount</a>.
+</p>
+
+<p>This field designates the type of value-added taxes (VAT) that are being charged in <a href="#EPLineItem_f_TaxAmount">TaxAmount</a>
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Total><b>Total</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Total cost of this line item.
+</p>
+
+<p>This field contains the total amount of the individual item, typically calculated as <a href="#EPLineItem_f_UnitCost">UnitCost</a> multiplied by
+<a href="#EPLineItem_f_Quantity">Quantity</a>, with any <a href="#EPLineItem_f_TaxAmount">TaxAmount</a> and <a href="#EPLineItem_f_DiscountAmount">DiscountAmount</a> taken into account.
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_UnitCost><b>UnitCost</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Cost of each individual item.
+</p>
+
+<p>This field contains the cost of each item in this Line Item. 
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPLineItem_f_Units><b>Units</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Unit of measure for this Line Item.
+</p>
+
+<p>This field contains the alphanumeric code for units of measure as used in international trade. 
+In practice, this should reflect the way in which the <a href="#EPLineItem_f_UnitCost">UnitCost</a> is calculated. If you're selling
+rope by the foot, the <a href="#EPLineItem_f_Units">Units</a> might be "feet". If you're selling chemicals, it might be by the "ounce".
+
+
+
+
+
+
+</p>
+
+</div>
+
+
+<h2 id="Level3_type_EPLineItem_Constructors">Constructors</h2>
+<p>
+
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-EPLineItemcon_1" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-EPLineItemcon_1" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-EPLineItemcon_1">
+<!-- C# Syntax -->
+<pre class="syntax" >
+<b>public <a href="javascript:void(0)">EPLineItem</a>(</b><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-EPLineItemcon_1">
+<!-- VB.NET Syntax -->
+<pre class="syntax" >
+<b>Public <a href="javascript:void(0)">EPLineItem</a>(</b><b>)</b>
+</pre></div></div>
+
+
+
+<p>
+<h1 id="Type_EPSpecialField">EPSpecialField Type</h1>
+
+<p>Additional name/value pairs which can be added to a transaction.</p>
+
+<h2 id="Level3_type_EPSpecialField_Remarks">Remarks</h2>
+
+<p>This type contains a <a href="#EPSpecialField_f_Name">Name</a> and <a href="#EPSpecialField_f_Value">Value</a> which may contain any additional information you wish
+to send to your gateway that this component does not currently send. You must know the field name in the 
+gateway integration guide available from your gateway. For instance, the code below shows how to add a 
+customer IP Address for the Authorize.Net gateway:</p>
+
+<p><code>  ICharge1.SpecialFields.add(new EPSpecialField("x_customer_ip", "255.123.456.78"));</code>
+
+
+
+</p>
+
+
+<div class="mb-2">The following fields are available:</div>
+<ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-0">
+  <li class="col" title="Name"><a href="#EPSpecialField_f_Name">Name</a></li>
+  <li class="col" title="Value"><a href="#EPSpecialField_f_Value">Value</a></li>
+</ul>
+
+<h2 id="Level3_type_EPSpecialField_Fields">Fields</h2>
+
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPSpecialField_f_Name><b>Name</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Name of special configuration field to submit in this transaction.
+
+The <a href="#EPSpecialField_f_Name">Name</a> and <a href="#EPSpecialField_f_Value">Value</a> fields can be used to send special gateway configuration and transaction fields for 
+each transaction. These fields can also be used to extend the functionality of this component by submitting 
+additional information to the gateway.</p>
+
+<p>This field is not applicable for the LinkPoint, FirstData, YourPay, PayFuse, or Orbital gateways.
+
+</p>
+
+</div>
+
+<div class="border-bottom mb-4 ps-2">
+<p>
+<a id=EPSpecialField_f_Value><b>Value</b><br/><i>string</i></a>
+<br />Default: <span class="text-lowercase">""</span>
+</p>
+
+<p>Value of special configuration field to submit in this transaction.
+
+The <a href="#EPSpecialField_f_Name">Name</a> and <a href="#EPSpecialField_f_Value">Value</a> fields can be used to send special gateway configuration and transaction fields for each transaction. 
+These fields can also be used to extend the functionality of this component by submitting additional information to the gateway.</p>
+
+<p>Note: This field is not applicable for the LinkPoint, FirstData, YourPay, PayFuse, or Orbital gateways.
+
+
+
+
+
+
+
+</p>
+
+</div>
+
+
+<h2 id="Level3_type_EPSpecialField_Constructors">Constructors</h2>
+<p>
+
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-EPSpecialFieldcon_1" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-EPSpecialFieldcon_1" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-EPSpecialFieldcon_1">
+<!-- C# Syntax -->
+<pre class="syntax" >
+<b>public <a href="javascript:void(0)">EPSpecialField</a>(</b><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-EPSpecialFieldcon_1">
+<!-- VB.NET Syntax -->
+<pre class="syntax" >
+<b>Public <a href="javascript:void(0)">EPSpecialField</a>(</b><b>)</b>
+</pre></div></div>
+
+
+
+<ul class="nav nav-tabs syntax-tabs"><li><a class="active" data-bs-target="#cs-EPSpecialFieldcon_2" data-bs-toggle="tab" class="syntax-tab" aria-selected="true">C#</a></li><li><a data-bs-target="#vb-EPSpecialFieldcon_2" data-bs-toggle="tab" class="syntax-tab">VB.NET</a></li></ul>
+<div class="tab-content"><div class="tab-pane show active" id="cs-EPSpecialFieldcon_2">
+<!-- C# Syntax -->
+<pre class="syntax" >
+<b>public <a href="javascript:void(0)">EPSpecialField</a>(</b><a href="javascript:void(0)">string </a><a href="javascript:void(0)"></a><i>name</i>, <a href="javascript:void(0)">string </a><a href="javascript:void(0)"></a><i>value</i><b>);</b>
+</pre></div>
+<div class="tab-pane" id="vb-EPSpecialFieldcon_2">
+<!-- VB.NET Syntax -->
+<pre class="syntax" >
+<b>Public <a href="javascript:void(0)">EPSpecialField</a>(</b><b>ByVal</b> <i>Name</i> <b>As</b> <a href="javascript:void(0)"><a href="javascript:void(0)">String</a></a>, <b>ByVal</b> <i>Value</i> <b>As</b> <a href="javascript:void(0)"><a href="javascript:void(0)">String</a></a><b>)</b>
+</pre></div></div>
+
+
+
+<p>
+
+
+<h1 id="Level3Config">Config Settings (<a href="#Level3">Level3</a> Component)</h1>
+
+
+The component accepts one or more of the following <i>configuration settings</i>.
+Configuration settings are similar in functionality to properties,
+but they are rarely used.  In order to avoid "polluting" the property
+namespace of the component, access to these <i>internal properties</i>
+is provided through the <a href="#Level3_m_Config">Config</a> method.
+
+<p></p>
+
+<h3 id="config_settings_level3">Level3 Config Settings</h3>
+<div class="w-100 ps-2">
+<a name="EscapeXML" class="main-color fw-bold">EscapeXML</a>: &#160; 
+Automatically escape the data in the aggregate.<p /><p />When set to true, this config will cause the component to automatically escape the XML data in the aggregate
+returned by <a href="#Level3_m_GetAggregate">GetAggregate</a>. The default value is false.
+
+
+</div><span></span>
+<h3 id="config_settings_base">Base Config Settings</h3>
+<div class="w-100 ps-2">
+<a name="BuildInfo" class="main-color fw-bold">BuildInfo</a>: &#160; 
+Information about the product's build.<p /><p />When queried, this setting will return a string containing information about the product's build.
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="GUIAvailable" class="main-color fw-bold">GUIAvailable</a>: &#160; 
+Whether or not a message loop is available for processing events.<p /><p />In a GUI-based application, long-running blocking operations may cause the application to stop responding to input until the operation returns. The component will attempt to discover whether or not the application has a message loop and, if one is discovered, it will process events in that message loop during any such blocking operation.
+
+<p>In some non-GUI applications, an invalid message loop may be discovered that will result in errant behavior. In these cases, setting <a href="#GUIAvailable">GUIAvailable</a> to <var>false</var> will ensure that the component does not attempt to process external events.
+</p>
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="LicenseInfo" class="main-color fw-bold">LicenseInfo</a>: &#160; 
+Information about the current license.<p /><p />When queried, this setting will return a string containing information about the license this instance of a component is using. It will return the following information:
+<ul><li>Product: The product the license is for.</li><li>Product Key: The key the license was generated from.</li><li>License Source: Where the license was found (e.g., RuntimeLicense, License File).</li><li>License Type: The type of license installed (e.g., Royalty Free, Single Server).</li><li>Last Valid Build: The last valid build number for which the license will work.</li></ul>
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="MaskSensitiveData" class="main-color fw-bold">MaskSensitiveData</a>: &#160; 
+Whether sensitive data is masked in log messages.<p /><p />In certain circumstances it may be beneficial to mask sensitive data, like passwords, in log messages. Set this to <var>true</var> to mask sensitive data. The default is <var>true</var>.
+
+
+
+</div><span></span>
+<div class="w-100 ps-2">
+<a name="UseInternalSecurityAPI" class="main-color fw-bold">UseInternalSecurityAPI</a>: &#160; 
+Whether or not to use the system security libraries or an internal implementation.<p /><p />
+When set to <var>false</var>, the component will use the system security libraries by default to perform cryptographic functions where applicable.
+
+In this case, calls to unmanaged code will be made. In certain environments, this is not desirable. 
+To use a completely managed security implementation, set this setting to <var>true</var>.
+
+<p>Setting this configuration setting to <var>true</var> tells the component to use the internal implementation instead of using the system security libraries.</p>
+
+<p>
+On Windows, this setting is set to <var>false</var> by default. On Linux/macOS, this setting is set to <var>true</var> by default.</p>
+
+<p>NOTE: This setting is static. The value set is applicable to all components used in the application.</p>
+
+<p>When this value is set, the product's system dynamic link library (DLL) is no longer required as a reference, as all unmanaged code is 
+stored in that file.
+
+
+
+
+</p>
+
+
+</div><span></span>
+
+
+<h1 id="Level3Errors">Trappable Errors (<a href="#Level3">Level3</a> Component)</h1>
+
+
+<h3>Level3 Errors</h3><div class='table-responsive p-1'><table class='table table-bordered'><tr><tr><td class='text-nowrap'>501&#160;&#160;&#160;</td><td>Data field invalid length.</td><tr><td class='text-nowrap'>502&#160;&#160;&#160;</td><td>Data field invalid format.</td><tr><td class='text-nowrap'>503&#160;&#160;&#160;</td><td>Data field out of range.
+</td></tr></table></div>
+
+
+
+		</div>
+	</main>
+</div>
+
+<footer class="help-footer py-2 bg-light sticky-bottom shadow-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="fs-13px text-center">
+					Copyright (c) 2026 4D Payments Inc. - E-Payment Integrator 2024  .NET Edition  [Build 9622]
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script defer src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script defer src="../lib/jquery/js/jquery.min.js" type="text/javascript"></script>
+<script defer src="../lib/highlight/highlight.min.js" type="text/javascript"></script>
+<script defer src="../lib/help.js?v=9622" type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+

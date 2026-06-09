@@ -38,3 +38,6 @@ packages/
 
 # Generated files
 *.vsix
+
+# Local secure config
+local.settings.json
