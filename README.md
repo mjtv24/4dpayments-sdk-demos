@@ -90,6 +90,19 @@ It includes a copy of the local E-Payment Integrator installation documentation 
 - `E-Payment Integrator 2024 .NET Edition/readme.txt`
 - `E-Payment Integrator 2024 .NET Edition/README.md`
 
+## 4D Shipping SDK Integration
+
+A new integration folder has been added at `4D Shipping SDK 2024 .NET Edition/`.
+It includes the local Shipping SDK help asset and installation readme so the repository can reference the new Shipping SDK installation alongside the existing demos.
+
+- `4D Shipping SDK 2024 .NET Edition/help/DPayments.DShippingSDK.htm`
+- `4D Shipping SDK 2024 .NET Edition/help/html/`
+- `4D Shipping SDK 2024 .NET Edition/help/lib/`
+- `4D Shipping SDK 2024 .NET Edition/readme.txt`
+- `4D Shipping SDK 2024 .NET Edition/README.md`
+
+Use the external code reference at `https://cdn.4dpayments.com/help/DXJ/cs/` for the latest Shipping SDK documentation.
+
 ## Notes
 
 - Each demo uses the workspace demo folder as its working directory.
